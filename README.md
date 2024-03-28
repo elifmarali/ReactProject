@@ -1,4 +1,11 @@
 # ReactProjects
+## Course Shopping App with Redux + Filtered Feature
+Course shopping application was made using redux with a multiple slice
+<img width="1440" alt="Ekran Resmi 2024-03-29 01 09 08" src="https://github.com/elifmarali/ReactProject/assets/71133148/aa0c1119-082f-4b57-875d-c62520efa4fa">
+<img width="1440" alt="Ekran Resmi 2024-03-29 01 09 27" src="https://github.com/elifmarali/ReactProject/assets/71133148/497a239e-fee6-4209-9ba0-040e09a3e52a">
+<img width="1440" alt="Ekran Resmi 2024-03-29 01 09 22" src="https://github.com/elifmarali/ReactProject/assets/71133148/a72d9570-f637-4ed4-a6e2-8f20648cd62e">
+
+
 ## Course Shopping App with Redux 
 Course shopping application was made using redux with a single slice
 <img width="1440" alt="Ekran Resmi 2024-03-27 17 29 43" src="https://github.com/elifmarali/ReactProjects/assets/71133148/63cf0caf-3eaf-440d-9679-0401733aeb4f">
