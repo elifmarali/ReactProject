@@ -1,0 +1,38 @@
+.introduce {
+    display: flex;
+    background-color: #176B87;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduceContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 60vh;
+    color: #EEF5FF;
+    background-color: #B4D4FF;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.startButton {
+    width: 18vw;
+    border: none;
+    border-radius: 20px;
+    height: 6vh;
+    padding: 10px;
+    background-color: #6ea8f4;
+    color: #EEF5FF;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 300ms ease-in-out;
+}
+
+.startButton:hover {
+    background-color: #176B87;
+}

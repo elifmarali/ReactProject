@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,900&family=Ubuntu:wght@700&display=swap');
+
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #B0578D;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.App {
+    background-color: #D988B9;
+    padding: 90px;
+    width: 30%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFE4D6;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.App .Header {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.App .Header label {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.App .Header div {
+    font-size: 36px;
+}
+
+.inputBar {
+    display: flex;
+    margin-bottom: 10px;
+    gap: 20px;
+    align-items: center;
+}
+
+.inputBar label {
+    font-size: 20px;
+}
+
+.inputBar input {
+    border: none;
+    width: 180px;
+    height: 30px;
+    text-align: center;
+}
+
+.App button {
+    background-color: #B0578D;
+    color: #FFE4D6;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 50%;
+    transition: 200ms ease-in;
+}
+
+.App button:hover {
+    background-color: #e22296;
+    color: #FFE4D6;
+}

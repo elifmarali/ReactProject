@@ -1,0 +1,209 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f4effc;
+}
+
+.openContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e2daeb;
+}
+
+.opening {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4effc;
+    width: 40vw;
+    height: 30vh;
+    gap: 20px;
+}
+
+.welcomeText {
+    font-size: 80px;
+    font-weight: 700;
+    color: #1f1135;
+}
+
+.openingText {
+    color: #1b1325;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbarContainer {
+    display: flex;
+    background-color: #e2daeb;
+    width: 100vw;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+}
+
+.navbarRightSection {
+    position: relative;
+
+}
+
+.navbarQuantity {
+    position: absolute;
+    bottom: 24px;
+    left: 16px;
+    background-color: #fbdd74;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    color: #1b1325;
+    font-size: 20px;
+    border: 1px solid #1b1325;
+    padding: 2px;
+}
+
+.navbarIcon {
+    color: #ff6e6c;
+}
+
+.mainHead {
+    margin-top: 10px;
+    color: #1f1135
+}
+
+.bottomMain {
+    margin-top: 10px;
+    width: 90vw;
+
+}
+
+.courseListContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.card {
+    width: 100%;
+    background-color: #e2daeb;
+    padding: 20px;
+    border: 0.1px solid #67568c;
+    border-radius: 10px;
+    display: flex;
+
+}
+
+.cardLeft {
+    width: 50vw;
+}
+
+.cardImage {
+    width: 80%;
+    height: 45vh;
+    border-radius: 5px;
+}
+
+.cardRight {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 40px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.cardTitle {
+    color: #1f1135;
+    font-size: 30px;
+}
+
+.cardPrice {
+    color: #1b1325;
+    font-size: 24px;
+}
+
+.quantityContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.quantityButton {
+    border: none;
+    background-color: #e2daeb;
+}
+
+.quantityIcon {
+    font-size: 20px;
+    color: #ff6e6c;
+}
+
+.quantity {
+    color: #1b1325;
+    font-size: 20px;
+}
+
+.deleteItem {
+    background-color: #f4effc;
+    color: #1f1135;
+    border: 1px solid #67568c;
+    border-radius: 10px;
+    width: 100px;
+    padding: 10px;
+    font-size: 16px;
+    transition: 100ms ease-in-out;
+}
+
+.deleteItem:hover {
+    color: #f4effc;
+    background-color: #1f1135;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px;
+    gap: 10px;
+}
+
+.totalAmount {
+    font-size: 20px;
+    color: #1b1325;
+    font-weight: 900;
+}
+
+.clearCourseList {
+    background-color: #fbdd74;
+    color: #ff6e6c;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    padding: 16px;
+    font-size: 16px;
+    transition: 100ms ease-in-out;
+}

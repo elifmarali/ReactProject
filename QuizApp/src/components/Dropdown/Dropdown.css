@@ -1,0 +1,12 @@
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dropdownContainer {
+    width: 16vw;
+    border: 1px solid lightgray;
+    height: 6vh;
+    border-radius: 16px;
+}

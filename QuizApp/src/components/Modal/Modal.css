@@ -1,0 +1,31 @@
+.modal {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 40vh;
+    color: #2b2d2e;
+    background-color: #B4D4FF;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    gap: 20px;
+    padding: 30px;
+    font-size: 20px;
+}
+
+.modalButton {
+    width: 18vw;
+    border: none;
+    border-radius: 20px;
+    height: 6vh;
+    padding: 10px;
+    background-color: #6ea8f4;
+    color: #EEF5FF;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 300ms ease-in-out;
+}
+
+.modalButton:hover {
+    background-color: #176B87;
+}
