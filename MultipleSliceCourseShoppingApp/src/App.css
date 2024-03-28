@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+.main {
+    width: 90vw;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    box-shadow: 0 0 2px 2px rgba(126, 126, 126, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.formHeader {
+    font-size: 40px;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formElement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.formItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.formLabel {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.formInput {
+    width: 150px;
+    border: 1px solid lightgray;
+    padding: 4px;
+    height: 20px;
+    border-radius: 3px;
+
+}
+
+.addButton {
+    border-radius: 10px;
+    width: 140px;
+    background-color: rgb(94, 252, 200);
+    border: 1px solid rgb(8, 88, 60);
+    color: rgb(8, 88, 60);
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    transition: 200ms ease-in;
+}
+
+.addButton:hover {
+    background-color: rgb(8, 88, 60);
+    border: 1px double rgb(94, 252, 200);
+    color: white;
+}
+
+.search {
+    width: 86vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.searchText {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.searchRight {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.searchLabel {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.listItem {
+    display: flex;
+    justify-content: space-between;
+    border: 0.1px solid lightgray;
+    padding: 16px;
+    align-items: center;
+    border-radius: 10px;
+    width: 92vw;
+}
+
+.listLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.desc {
+    font-size: 16px;
+    font-weight: 400;
+    color: gray;
+}
+
+.price {
+    font-size: 14px;
+    font-weight: 200;
+    color: rgb(130, 130, 130);
+}
+
+.deleteItem {
+    border-radius: 10px;
+    width: 100px;
+    background-color: rgb(252, 94, 118);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    height: 40px;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    margin: 14px 0;
+    font-size: 28px;
+    color: rgb(106, 106, 106);
+    font-weight: 100;
+}
