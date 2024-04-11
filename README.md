@@ -13,6 +13,11 @@ Course shopping application was made using redux with a single slice
 <img width="1440" alt="Ekran Resmi 2024-03-27 17 29 55" src="https://github.com/elifmarali/ReactProjects/assets/71133148/7bb02ff3-a681-4295-9108-2e557b8c175d">
 <img width="1440" alt="Ekran Resmi 2024-03-27 17 30 00" src="https://github.com/elifmarali/ReactProjects/assets/71133148/d5567ee7-af23-49b7-8e2c-8c5ae74af3d9">
 
+## Pokedex
+
+State hooks reinforced with Pokedex project
+<img width="1440" alt="Ekran Resmi 2024-04-12 00 04 24" src="https://github.com/elifmarali/ReactProject/assets/71133148/b9a3b05b-578f-4d71-a459-eed132c56955">
+
 
 ## Quiz App
 <img width="1440" alt="Ekran Resmi 2024-02-28 16 20 34" src="https://github.com/elifmarali/ReactProjects/assets/71133148/1f867678-8db0-4d2c-9f4e-6d320fc0048b">
