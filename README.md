@@ -3,15 +3,17 @@
 Course shopping application was made using redux with a multiple slice
 <img width="1440" alt="Ekran Resmi 2024-03-29 01 09 08" src="https://github.com/elifmarali/ReactProject/assets/71133148/aa0c1119-082f-4b57-875d-c62520efa4fa">
 <img width="1440" alt="Ekran Resmi 2024-03-29 01 09 27" src="https://github.com/elifmarali/ReactProject/assets/71133148/497a239e-fee6-4209-9ba0-040e09a3e52a">
-<img width="1440" alt="Ekran Resmi 2024-03-29 01 09 22" src="https://github.com/elifmarali/ReactProject/assets/71133148/a72d9570-f637-4ed4-a6e2-8f20648cd62e">
+<img width="1440" alt="Ekran Resmi 2024-03-29 01 09 22" src="https://github.com/elifmarali/ReactProject/assets/71133148/a72d9570-f637-4ed4-a6e2-8f20648cd62e"><img width="1440" alt="Ekran Resmi 2024-04-12 00 13 32" src="https://github.com/elifmarali/ReactProject/assets/71133148/f0dd604e-f7e3-4fef-9c1f-a182fa75a9aa">
+
 
 
 ## Course Shopping App with Redux 
 Course shopping application was made using redux with a single slice
-<img width="1440" alt="Ekran Resmi 2024-03-27 17 29 43" src="https://github.com/elifmarali/ReactProjects/assets/71133148/63cf0caf-3eaf-440d-9679-0401733aeb4f">
-<img width="1440" alt="Ekran Resmi 2024-03-27 17 29 47" src="https://github.com/elifmarali/ReactProjects/assets/71133148/0436fe95-a4d7-4d45-a0cb-945881d4bffa">
-<img width="1440" alt="Ekran Resmi 2024-03-27 17 29 55" src="https://github.com/elifmarali/ReactProjects/assets/71133148/7bb02ff3-a681-4295-9108-2e557b8c175d">
-<img width="1440" alt="Ekran Resmi 2024-03-27 17 30 00" src="https://github.com/elifmarali/ReactProjects/assets/71133148/d5567ee7-af23-49b7-8e2c-8c5ae74af3d9">
+<img width="1440" alt="Ekran Resmi 2024-04-12 00 13 19" src="https://github.com/elifmarali/ReactProject/assets/71133148/89221350-bb4a-4c29-ba62-5656a7ac3598">
+<img width="1440" alt="Ekran Resmi 2024-04-12 00 13 06" src="https://github.com/elifmarali/ReactProject/assets/71133148/8ebc6d51-7e8c-4473-af52-f23992d366a7">
+<img width="1440" alt="Ekran Resmi 2024-04-12 00 13 44" src="https://github.com/elifmarali/ReactProject/assets/71133148/25d9b659-4230-487a-aeb3-5de155f8e491">
+<img width="1440" alt="Ekran Resmi 2024-04-12 00 13 55" src="https://github.com/elifmarali/ReactProject/assets/71133148/63d85141-0c7f-4f82-a902-ad7e98599430">
+
 
 ## Pokedex
 
