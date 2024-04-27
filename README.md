@@ -1,5 +1,13 @@
 # ReactProjects
 
+## Brand Colors
+<img width="1440" alt="Ekran Resmi 2024-04-27 15 07 30" src="https://github.com/elifmarali/ReactProject/assets/71133148/f5e7e0a9-1166-42e5-be13-4a3ab5b60243">
+<img width="1440" alt="Ekran Resmi 2024-04-27 15 07 41" src="https://github.com/elifmarali/ReactProject/assets/71133148/f0b58e6d-0632-4e98-95e1-9dd11834b3ae">
+<img width="1440" alt="Ekran Resmi 2024-04-27 15 07 56" src="https://github.com/elifmarali/ReactProject/assets/71133148/bd17665e-a394-482e-8ab6-7940c8d44ca8">
+<img width="1440" alt="Ekran Resmi 2024-04-27 15 08 12" src="https://github.com/elifmarali/ReactProject/assets/71133148/ea34d916-b933-48c9-a246-2e90c24c7c5b">
+<img width="1440" alt="Ekran Resmi 2024-04-27 15 08 22" src="https://github.com/elifmarali/ReactProject/assets/71133148/482bb881-98a0-4d2e-9407-3be2749bf481">
+<img width="1440" alt="Ekran Resmi 2024-04-27 15 08 47" src="https://github.com/elifmarali/ReactProject/assets/71133148/74e1e963-1966-42e7-ab1e-34de8cbc1008">
+
 ## Course Shopping App with Redux + Filtered Feature
 
 Course shopping application was made using redux with a multiple slice
