@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Eraser",
+    "price": 10,
+    "img": "https://www.istekle.com/images/thumbs/002/0025309_faber-castell-dust-mavi-sinav-silgisi_625.webp"
+  },
+  {
+    "id": 2,
+    "name": "Pencil",
+    "price": 20,
+    "img": "https://cdn.cimri.io/image/1200x1200/rotring-tikky-0-7-bordo-versatil-kalem-_317185202.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Book",
+    "price": 40,
+    "img": "https://t3.ftcdn.net/jpg/00/06/45/56/360_F_6455661_Ptvg5iAO0DpUlt0ItlO8YewZpvU3IxwX.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Pencil Tip",
+    "price": 0.5,
+    "img": "https://productimages.hepsiburada.net/s/34/375-375/10450030559282.jpg"
+  }
+]

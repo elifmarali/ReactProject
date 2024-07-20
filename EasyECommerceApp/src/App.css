@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+  background-color: rgb(238, 238, 238);
+}
+
+.header {
+  height: 8vw;
+  background-color: rgba(0, 106, 255, 0.842);
+  color: #fff;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  align-items: center;
+  line-height: 1.9;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.productItem {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 20vw;
+  height: 50vh;
+  background-color: #fff;
+  gap: 10px;
+}
+
+.productImage {
+  width: 100%;
+  height: 30vh;
+}
+
+.productName {
+  font-size: 20px;
+}
+
+.productPrice {
+  font-size: 18px;
+  color: rgb(0, 132, 255);
+}
+
+.buttonContainer {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.buttonContainer button {
+  width: 40%;
+  background-color: skyblue;
+  border: none;
+  height: 100%;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+.buttonContainer div {
+  width: 20%;
+  height: 94%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}

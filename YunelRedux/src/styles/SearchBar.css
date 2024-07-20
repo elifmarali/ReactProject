@@ -1,0 +1,106 @@
+.searchContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 260px;
+    height: 80px;
+}
+
+.searchContainer {
+    display: flex;
+    position: relative;
+}
+
+.searchInput {
+    background-color: #f3f3f3;
+    width: 600px;
+    height: 30px;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.searchIcon {
+    position: absolute;
+    right: 330px;
+    top: 30px;
+    color: #f3860e;
+    width: 20px;
+    height: 20px;
+}
+
+.rightSearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.basket {
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.basketText {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.quantity {
+    position: absolute;
+    left: 85px;
+    top: -7px;
+    font-size: 14px;
+}
+
+.basketIcon {
+    width: 25px;
+    height: 25px;
+    font-weight: 100;
+
+
+}
+
+.basket:hover .basketText,
+.basketIcon:hover .basketText {
+    color: #f3860e;
+    transition: 300ms all;
+}
+
+.basket:hover .basketIcon,
+.basketIcon:hover {
+    color: #f3860e;
+    transition: 300ms all;
+}
+
+.basket:hover .quantity,
+.basketIcon:hover .quantity {
+    color: #f3860e;
+    transition: 300ms all;
+}
+
+.favoriteIcon {
+    width: 30px;
+    height: 30px;
+    transition: 300ms all;
+}
+
+.basket:hover .basketText,
+.basketIcon:hover .basketText {
+    color: #f3860e;
+    transition: 300ms all;
+}
+
+.basket:hover .favoriteIcon,
+.basketIcon:hover .favoriteIcon {
+    color: #f3860e;
+    transition: 300ms all;
+}
