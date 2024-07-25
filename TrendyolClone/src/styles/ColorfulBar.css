@@ -1,0 +1,35 @@
+.colorfulBar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.colorfulItem {
+    width: 33%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px 30px;
+    font-weight: 900;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+.colorfulBar .green {
+    background-color: #eefbf5;
+    color: #377146;
+}
+
+.colorfulBar .orange {
+    background-color: #fff4ec;
+    color: #a94c0e;
+}
+
+.colorfulBar .pink {
+    background-color: #fef0f2;
+    color: #ae355b;
+}
