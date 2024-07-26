@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-function Product({ product }) {
-  console.log(product);
+function Product({ product, popularItem }) {
+  const item = product || popularItem;
+
   return (
     <div className="productItem">
-      <img src={product.imageUrl} alt="ürün görseli" className="productImage" />
-      <div className="productTitle">{product.name}</div>
-      <div className="productPrice">{product.price} TL</div>
+      <img src={item.imageUrl} alt="ürün görseli" className="productImage" />
+      <div className="productTitle">{item.name}</div>
+      <div className="productPrice">{item.price} TL</div>
     </div>
   );
 }

@@ -17,7 +17,7 @@ function Navbar() {
     <div className="categories">
       {categoryList?.map((category) => {
         return (
-          <div class="category" key={category}>
+          <div className="category" key={category}>
             <div
               key={category}
               id={category}

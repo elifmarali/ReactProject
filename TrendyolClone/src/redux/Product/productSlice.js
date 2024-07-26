@@ -11,7 +11,8 @@ export let getProductList = createAsyncThunk(
 const initialState = {
     productList: [],
     productStatus: null,
-    categoryList: []
+    categoryList: [],
+    popularList: []
 }
 export const productSlice = createSlice({
     name: "product",
@@ -23,6 +24,17 @@ export const productSlice = createSlice({
                     if (!(state.categoryList.includes(prodoctItem.category))) {
                         state.categoryList.push(prodoctItem.category);
                     }
+                })
+            }
+        },
+        getEnCokEklenenlerList: (state) => {
+            if (state.productStatus === 'success') {
+                state.productList.map((product) => {
+                    product.tags.map((tag) => {
+                        if (tag.toLowerCase().includes("en çok eklenenler")) {
+                            state.popularList.push(product);
+                        }
+                    })
                 })
             }
         }
@@ -45,4 +57,4 @@ export const productSlice = createSlice({
 })
 
 export default productSlice.reducer;
-export const { getCategoryList } = productSlice.actions;
+export const { getCategoryList, getEnCokEklenenlerList } = productSlice.actions;

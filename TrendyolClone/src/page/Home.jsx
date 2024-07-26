@@ -6,6 +6,7 @@ import { getProductList } from "../redux/Product/productSlice";
 import { useDispatch } from "react-redux";
 import ProductList from "../components/ProductList";
 import ColorfulBar from "../components/ColorfulBar";
+import PopularProduct from "../components/PopularProducts";
 function Home() {
   const dispatch = useDispatch();
   useEffect(() => {
@@ -16,6 +17,7 @@ function Home() {
       <SearchBar />
       <Navbar />
       <ColorfulBar />
+      <PopularProduct />
     </div>
   );
 }

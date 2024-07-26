@@ -5,12 +5,19 @@ import { CiHeart } from "react-icons/ci";
 import { SlBasket } from "react-icons/sl";
 import { useSelector } from "react-redux";
 import { IoIosSearch } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 function SearchBar() {
   const { quantity } = useSelector((store) => store.basket);
+  const nav = useNavigate();
   return (
     <div className="searchContainer">
-      <img src={logo} alt="logo resmi" className="logo" />
+      <img
+        src={logo}
+        alt="logo resmi"
+        className="logo"
+        onClick={() => nav("/")}
+      />
       <div className="inputContainer">
         <input
           type="text"
