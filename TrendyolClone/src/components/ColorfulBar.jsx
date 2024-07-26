@@ -7,7 +7,7 @@ function ColorfulBar() {
     <div className="colorfulBar">
       <div
         className="colorfulItem green"
-        onClick={() => nav("/sepeteEnCokEklenenler")}
+        onClick={() => nav("/enCokEklenenler")}
       >
         Sepete En Çok Eklenenler
       </div>

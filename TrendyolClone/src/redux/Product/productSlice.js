@@ -18,6 +18,12 @@ export const productSlice = createSlice({
     name: "product",
     initialState,
     reducers: {
+        resetProductList: (state) => {
+            state.productList = []; // Ürün listesini sıfırla
+            state.productStatus = null; // Durumu sıfırla
+            state.categoryList = []; // Kategori listesini sıfırla
+            state.popularList = []; // Popüler listeyi sıfırla
+        },
         getCategoryList: (state) => {
             if (state.productStatus === 'success') {
                 state.productList.map((prodoctItem) => {
@@ -57,4 +63,4 @@ export const productSlice = createSlice({
 })
 
 export default productSlice.reducer;
-export const { getCategoryList, getEnCokEklenenlerList } = productSlice.actions;
+export const { getCategoryList, getEnCokEklenenlerList, resetProductList } = productSlice.actions;

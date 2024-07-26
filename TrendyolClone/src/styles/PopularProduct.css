@@ -1,4 +1,40 @@
 .popularContainer {
     display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 400px;
+    background-color: #fff4ec;
+    padding: 20px;
+}
 
+.popularList {
+    display: flex;
+    gap: 10px;
+}
+
+.popularTop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popularHeader {
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.popularAllButton {
+    border: none;
+    background: #fff4ec;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.allIcon {
+    width: 20px;
+    height: 20px;
 }

@@ -37,7 +37,7 @@
       "description": "Timeless blue blazer for formal and semi-formal occasions.",
       "sizes": ["M", "L", "XL"],
       "tags": ["En Çok Öne Çıkanlar"],
-      "coupons": [2, 4]
+      "coupons": [2]
     },
     {
       "id": 27,
@@ -63,7 +63,7 @@
       "description": "Soft woolen scarf to keep you warm during winter.",
       "sizes": ["One Size"],
       "tags": ["En Çok Eklenenler"],
-      "coupons": [2, 4]
+      "coupons": [2]
     },
     {
       "id": 29,
@@ -76,7 +76,7 @@
       "description": "Comfortable track pants for sports and leisure.",
       "sizes": ["M", "L", "XL"],
       "tags": ["Flaş Ürünler"],
-      "coupons": [2, 4]
+      "coupons": [2]
     },
     {
       "id": 30,
@@ -676,5 +676,9 @@
       "tags": ["En Çok Öne Çıkanlar"],
       "coupons": [4]
     }
+  ],
+  "coupons": [
+    { "id": 2, "name": "20 TL İndirim", "value": 20 },
+    { "id": 4, "name": "Kargo Bedava", "value": 30 }
   ]
 }
