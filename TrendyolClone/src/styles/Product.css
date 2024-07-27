@@ -36,6 +36,7 @@
     top: 6px;
     gap: 10px;
     padding: 10px;
+    border-radius: 3px;
 }
 
 .cargoText {
@@ -56,12 +57,29 @@
 }
 
 .productFavoriteIcon {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
 }
 
 .favorite:hover .productFavoriteIcon {
     color: #f27b1f;
+}
+
+.favorite:hover.favoriteOn:hover .productFavoriteIcon {
+    color: #fff;
+}
+
+.favoriteOn:hover.productFavoriteIcon {
+    color: #fff;
+}
+
+.favoriteOn.favorite {
+    background: #f27b1f;
+
+}
+
+.favoriteOn.productFavoriteIcon {
+    color: #fff;
 }
 
 .productTitle.popularItem {

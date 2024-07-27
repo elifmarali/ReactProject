@@ -1,5 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
+
 export let getProductList = createAsyncThunk(
     "getProductList", async () => {
         const response = await axios.get("http://localhost:3000/products")
@@ -7,6 +8,20 @@ export let getProductList = createAsyncThunk(
     }
 )
 
+export let favoriteClick = createAsyncThunk("favoriteClick",
+    async (id, { getState }) => {
+        const state = getState()
+        const currentProduct = state.product.productList.find(product => product.id === id);
+        const currentProductFavorite = currentProduct.favorite;
+
+        const response = await axios.patch(`http://localhost:3000/products/${id}`, {
+            ...currentProduct,
+            favorite: !currentProductFavorite
+        });
+
+        return response.data
+    }
+)
 
 const initialState = {
     productList: [],
@@ -57,8 +72,8 @@ export const productSlice = createSlice({
             }))
             .addCase(getProductList.rejected, ((state) => {
                 state.productStatus = "error";
-
             }))
+
     }
 })
 

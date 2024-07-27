@@ -2,12 +2,16 @@ import React, { useEffect, useState } from "react";
 import { BsBox } from "react-icons/bs";
 import { AiOutlineHeart } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
+import { favoriteClick } from "../redux/Product/productSlice";
+import { useDispatch } from "react-redux";
 
 function Product({ product, popularItem, className }) {
+  const dispatch = useDispatch();
   const nav = useNavigate();
   const item = product || popularItem;
   const [cargo, setCargo] = useState(false);
   const [discount, setDiscount] = useState(false);
+  const [heart, setHeart] = useState(item.favorite);
   useEffect(() => {
     item.coupons.map((coupon) => {
       if (coupon === 2) {
@@ -17,15 +21,14 @@ function Product({ product, popularItem, className }) {
       }
     });
   }, [item]);
-  const handleClickProductItem = (id) => {
-    nav(`productDetails/${id}`);
+
+  const handleClickFavorite = (id) => {
+    setHeart(!heart);
+    dispatch(favoriteClick(item.id));
   };
 
   return (
-    <div
-      className={`productItem ${className}`}
-      onClick={() => handleClickProductItem(item.id)}
-    >
+    <div className={`productItem ${className}`}>
       <div className="productTop">
         {cargo ? (
           <div className="cargo">
@@ -37,17 +40,35 @@ function Product({ product, popularItem, className }) {
         ) : (
           ""
         )}
-        <div className="favorite">
-          <AiOutlineHeart className="productFavoriteIcon" />
+        <div
+          className={`favorite ${heart ? "favoriteOn" : ""}`}
+          onClick={() => {
+            handleClickFavorite(item.id);
+          }}
+        >
+          <AiOutlineHeart
+            className={`productFavoriteIcon ${heart ? "favoriteOn" : ""}`}
+          />
         </div>
       </div>
       <img
         src={item.imageUrl}
         alt="ürün görseli"
         className={`productImage ${className}`}
+        onClick={() => nav(`productDetails/${item.id}`)}
       />
-      <div className={`productTitle ${className}`}>{item.name}</div>
-      <div className={`productPrice ${className}`}>{item.price} TL</div>
+      <div
+        className={`productTitle ${className}`}
+        onClick={() => nav(`productDetails/${item.id}`)}
+      >
+        {item.name}
+      </div>
+      <div
+        className={`productPrice ${className}`}
+        onClick={() => nav(`productDetails/${item.id}`)}
+      >
+        {item.price} TL
+      </div>
     </div>
   );
 }
