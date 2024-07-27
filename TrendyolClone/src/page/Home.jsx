@@ -11,6 +11,8 @@ import ProductList from "../components/ProductList";
 import ColorfulBar from "../components/ColorfulBar";
 import PopularProduct from "../components/PopularProducts";
 import { useLocation } from "react-router-dom";
+import FlashProducts from "../components/FlashProducts";
+import BestSellingProducts from "../components/BestSellingProducts";
 function Home() {
   const dispatch = useDispatch();
   const location = useLocation();
@@ -27,6 +29,8 @@ function Home() {
       <Navbar />
       <ColorfulBar />
       <PopularProduct />
+      <FlashProducts />
+      <BestSellingProducts />
     </div>
   );
 }

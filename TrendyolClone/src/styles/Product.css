@@ -6,13 +6,13 @@
     border-radius: 6px;
     position: relative;
     cursor: pointer;
+    background-color: #fff;
 }
 
 .productImage.popularItem {
     width: 218px;
-    height: 222px;
+    height: 212px;
     padding: 8px 16px;
-
 }
 
 .productTop {
@@ -36,7 +36,6 @@
     top: 6px;
     gap: 10px;
     padding: 10px;
-    border-radius: 3px;
 }
 
 .cargoText {
@@ -75,7 +74,6 @@
 
 .favoriteOn.favorite {
     background: #f27b1f;
-
 }
 
 .favoriteOn.productFavoriteIcon {
@@ -83,7 +81,7 @@
 }
 
 .productTitle.popularItem {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     padding: 5px 10px;
 }
@@ -93,4 +91,29 @@
     font-weight: 600;
     padding: 5px 10px;
     font-size: 12px;
+}
+
+.coupon {
+    width: 110px;
+    background-color: #fff0f5;
+    color: #000;
+    font-size: 10px;
+    margin: 8px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.couponIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.couponIcon {
+    width: 20px;
+    height: 20px;
 }

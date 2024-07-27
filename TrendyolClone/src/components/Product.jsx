@@ -4,11 +4,14 @@ import { AiOutlineHeart } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import { favoriteClick } from "../redux/Product/productSlice";
 import { useDispatch } from "react-redux";
+import { RiCoupon3Line } from "react-icons/ri";
 
-function Product({ product, popularItem, className }) {
+function Product({ product, popularItem, flashItem, className }) {
   const dispatch = useDispatch();
   const nav = useNavigate();
-  const item = product || popularItem;
+  const itemVertical = popularItem || flashItem;
+  const itemHorizantal = product;
+  const item = itemHorizantal || itemVertical;
   const [cargo, setCargo] = useState(false);
   const [discount, setDiscount] = useState(false);
   const [heart, setHeart] = useState(item.favorite);
@@ -69,6 +72,12 @@ function Product({ product, popularItem, className }) {
       >
         {item.price} TL
       </div>
+      {discount && (
+        <div className="coupon">
+          <RiCoupon3Line fill="#ff4a88" className="couponIcon" />
+          Kupon Fırsatı
+        </div>
+      )}
     </div>
   );
 }

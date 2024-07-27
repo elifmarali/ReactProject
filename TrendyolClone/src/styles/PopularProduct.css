@@ -2,14 +2,17 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    height: 400px;
+    height: 440px;
     background-color: #fff4ec;
     padding: 20px;
+    border-radius: 6px;
 }
 
 .popularList {
     display: flex;
     gap: 10px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .popularTop {
@@ -37,4 +40,41 @@
 .allIcon {
     width: 20px;
     height: 20px;
+}
+
+.scrollButtons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.scrollButton {
+    position: absolute;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms all;
+}
+
+.scrollButton:hover {
+    background-color: #f0f0f0;
+}
+
+.scrollLeft {
+    left: 0px;
+    z-index: 1;
+}
+
+.scrollRight {
+    right: 0px;
+}
+
+.scrollIcon {
+    font-size: 20px;
 }

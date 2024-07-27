@@ -27,7 +27,9 @@ const initialState = {
     productList: [],
     productStatus: null,
     categoryList: [],
-    popularList: []
+    popularList: [],
+    flashList: [],
+    bestSellingList: []
 }
 export const productSlice = createSlice({
     name: "product",
@@ -58,6 +60,28 @@ export const productSlice = createSlice({
                     })
                 })
             }
+        },
+        getFlashList: (state) => {
+            if (state.productStatus === 'success') {
+                state.productList.map((product) => {
+                    product.tags.map((tag) => {
+                        if (tag.toLowerCase().includes("flaş ürünler")) {
+                            state.flashList.push(product);
+                        }
+                    })
+                })
+            }
+        },
+        getBestSellingList: (state) => {
+            if (state.productStatus === 'success') {
+                state.productList.map((product) => {
+                    product.tags.map((tag) => {
+                        if (tag.toLowerCase().includes("en çok öne çıkanlar")) {
+                            state.bestSellingList.push(product)
+                        }
+                    })
+                })
+            }
         }
 
     },
@@ -78,4 +102,4 @@ export const productSlice = createSlice({
 })
 
 export default productSlice.reducer;
-export const { getCategoryList, getEnCokEklenenlerList, resetProductList } = productSlice.actions;
+export const { getCategoryList, getEnCokEklenenlerList, resetProductList, getFlashList, getBestSellingList } = productSlice.actions;

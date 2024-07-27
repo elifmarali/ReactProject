@@ -9,19 +9,10 @@
       "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
       "price": 139.99,
       "description": "Soft and cozy knit sweater for winter warmth.",
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
-      "tags": [
-        "En Çok Eklenenler"
-      ],
-      "coupons": [
-        2,
-        4
-      ],
-      "favorite": false
+      "sizes": ["S", "M", "L"],
+      "tags": ["En Çok Eklenenler"],
+      "coupons": [2, 4],
+      "favorite": true
     },
     {
       "id": 25,
@@ -32,19 +23,9 @@
       "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
       "price": 99.99,
       "description": "Classic black jeans with a perfect fit.",
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
-      ],
-      "tags": [
-        "En Çok Eklenenler"
-      ],
-      "coupons": [
-        2,
-        4
-      ],
+      "sizes": ["S", "M", "L", "XL"],
+      "tags": ["Flaş Ürünler"],
+      "coupons": [2, 4],
       "favorite": false
     },
     {
@@ -56,17 +37,9 @@
       "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
       "price": 219.99,
       "description": "Timeless blue blazer for formal and semi-formal occasions.",
-      "sizes": [
-        "M",
-        "L",
-        "XL"
-      ],
-      "tags": [
-        "En Çok Öne Çıkanlar"
-      ],
-      "coupons": [
-        2
-      ],
+      "sizes": ["M", "L", "XL"],
+      "tags": ["En Çok Öne Çıkanlar"],
+      "coupons": [2],
       "favorite": false
     },
     {
@@ -78,19 +51,9 @@
       "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
       "price": 159.99,
       "description": "Elegant leather ankle boots for a stylish look.",
-      "sizes": [
-        "36",
-        "37",
-        "38",
-        "39"
-      ],
-      "tags": [
-        "Flaş Ürünler"
-      ],
-      "coupons": [
-        2,
-        4
-      ],
+      "sizes": ["36", "37", "38", "39"],
+      "tags": ["Flaş Ürünler"],
+      "coupons": [2, 4],
       "favorite": false
     },
     {
@@ -102,15 +65,9 @@
       "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
       "price": 59.99,
       "description": "Soft woolen scarf to keep you warm during winter.",
-      "sizes": [
-        "One Size"
-      ],
-      "tags": [
-        "En Çok Eklenenler"
-      ],
-      "coupons": [
-        2
-      ],
+      "sizes": ["One Size"],
+      "tags": ["En Çok Eklenenler"],
+      "coupons": [2],
       "favorite": false
     },
     {
@@ -122,17 +79,9 @@
       "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
       "price": 99.99,
       "description": "Comfortable track pants for sports and leisure.",
-      "sizes": [
-        "M",
-        "L",
-        "XL"
-      ],
-      "tags": [
-        "Flaş Ürünler"
-      ],
-      "coupons": [
-        2
-      ],
+      "sizes": ["M", "L", "XL"],
+      "tags": ["Flaş Ürünler"],
+      "coupons": [2],
       "favorite": false
     },
     {
@@ -144,16 +93,9 @@
       "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
       "price": 89.99,
       "description": "Stylish and practical backpack for everyday use.",
-      "sizes": [
-        "One Size"
-      ],
-      "tags": [
-        "En Çok Eklenenler"
-      ],
-      "coupons": [
-        2,
-        4
-      ],
+      "sizes": ["One Size"],
+      "tags": ["En Çok Eklenenler"],
+      "coupons": [2, 4],
       "favorite": true
     },
     {
@@ -165,18 +107,9 @@
       "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
       "price": 79.99,
       "description": "Soft lounge pants perfect for relaxing at home.",
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
-      "tags": [
-        "En Çok Eklenenler"
-      ],
-      "coupons": [
-        2,
-        4
-      ],
+      "sizes": ["S", "M", "L"],
+      "tags": ["En Çok Eklenenler"],
+      "coupons": [2, 4],
       "favorite": true
     },
     {
@@ -188,19 +121,9 @@
       "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
       "price": 149.99,
       "description": "Formal dress shoes with a polished finish.",
-      "sizes": [
-        "40",
-        "41",
-        "42",
-        "43"
-      ],
-      "tags": [
-        "En Çok Öne Çıkanlar"
-      ],
-      "coupons": [
-        2,
-        4
-      ],
+      "sizes": ["40", "41", "42", "43"],
+      "tags": ["En Çok Öne Çıkanlar"],
+      "coupons": [2, 4],
       "favorite": false
     },
     {
@@ -212,16 +135,9 @@
       "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
       "price": 29.99,
       "description": "Protective and stylish sun hat for summer days.",
-      "sizes": [
-        "One Size"
-      ],
-      "tags": [
-        "Flaş Ürünler"
-      ],
-      "coupons": [
-        2,
-        4
-      ],
+      "sizes": ["One Size"],
+      "tags": ["Flaş Ürünler"],
+      "coupons": [2, 4],
       "favorite": false
     },
     {
@@ -233,18 +149,9 @@
       "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
       "price": 159.99,
       "description": "Elegant maxi dress with a chic design for special occasions.",
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
-      "tags": [
-        "En Çok Eklenenler"
-      ],
-      "coupons": [
-        2,
-        4
-      ],
+      "sizes": ["S", "M", "L"],
+      "tags": ["En Çok Eklenenler"],
+      "coupons": [2, 4],
       "favorite": false
     },
     {
@@ -256,18 +163,9 @@
       "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
       "price": 89.99,
       "description": "Trendy casual pants that provide both comfort and style.",
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
-      "tags": [
-        "En Çok Öne Çıkanlar"
-      ],
-      "coupons": [
-        2,
-        4
-      ],
+      "sizes": ["S", "M", "L"],
+      "tags": ["En Çok Öne Çıkanlar"],
+      "coupons": [2, 4],
       "favorite": false
     },
     {
@@ -279,18 +177,9 @@
       "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
       "price": 119.99,
       "description": "Luxurious silk blouse for a sophisticated look.",
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
-      "tags": [
-        "En Çok Eklenenler"
-      ],
-      "coupons": [
-        2,
-        4
-      ],
+      "sizes": ["S", "M", "L"],
+      "tags": ["En Çok Eklenenler"],
+      "coupons": [2, 4],
       "favorite": false
     },
     {
@@ -302,18 +191,9 @@
       "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
       "price": 49.99,
       "description": "Breathable gym shorts ideal for workouts.",
-      "sizes": [
-        "M",
-        "L",
-        "XL"
-      ],
-      "tags": [
-        "Flaş Ürünler"
-      ],
-      "coupons": [
-        2,
-        4
-      ],
+      "sizes": ["M", "L", "XL"],
+      "tags": ["Flaş Ürünler"],
+      "coupons": [2, 4],
       "favorite": false
     },
     {
@@ -325,18 +205,9 @@
       "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
       "price": 79.99,
       "description": "Relaxed long sleeve shirt suitable for casual wear.",
-      "sizes": [
-        "M",
-        "L",
-        "XL"
-      ],
-      "tags": [
-        "En Çok Eklenenler"
-      ],
-      "coupons": [
-        2,
-        4
-      ],
+      "sizes": ["M", "L", "XL"],
+      "tags": ["En Çok Eklenenler"],
+      "coupons": [2, 4],
       "favorite": true
     },
     {
@@ -348,18 +219,9 @@
       "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
       "price": 199.99,
       "description": "Insulated puffer jacket to keep you warm in cold weather.",
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
-      "tags": [
-        "En Çok Öne Çıkanlar"
-      ],
-      "coupons": [
-        2,
-        4
-      ],
+      "sizes": ["S", "M", "L"],
+      "tags": ["En Çok Öne Çıkanlar"],
+      "coupons": [2, 4],
       "favorite": false
     },
     {
@@ -371,18 +233,9 @@
       "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
       "price": 49.99,
       "description": "Breathable mesh shorts for sports activities.",
-      "sizes": [
-        "M",
-        "L",
-        "XL"
-      ],
-      "tags": [
-        "Flaş Ürünler"
-      ],
-      "coupons": [
-        2,
-        4
-      ],
+      "sizes": ["M", "L", "XL"],
+      "tags": ["Flaş Ürünler"],
+      "coupons": [2, 4],
       "favorite": false
     },
     {
@@ -394,16 +247,9 @@
       "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
       "price": 79.99,
       "description": "Stylish crossbody bag for a chic everyday look.",
-      "sizes": [
-        "One Size"
-      ],
-      "tags": [
-        "En Çok Eklenenler"
-      ],
-      "coupons": [
-        2,
-        4
-      ],
+      "sizes": ["One Size"],
+      "tags": ["En Çok Eklenenler"],
+      "coupons": [2, 4],
       "favorite": true
     },
     {
@@ -415,16 +261,9 @@
       "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
       "price": 29.99,
       "description": "Warm wool gloves to keep your hands cozy.",
-      "sizes": [
-        "One Size"
-      ],
-      "tags": [
-        "En Çok Eklenenler"
-      ],
-      "coupons": [
-        2,
-        4
-      ],
+      "sizes": ["One Size"],
+      "tags": ["En Çok Eklenenler"],
+      "coupons": [2, 4],
       "favorite": false
     },
     {
@@ -436,18 +275,9 @@
       "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
       "price": 89.99,
       "description": "Fashionable turtleneck sweater for a modern look.",
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
-      "tags": [
-        "En Çok Öne Çıkanlar"
-      ],
-      "coupons": [
-        2,
-        4
-      ],
+      "sizes": ["S", "M", "L"],
+      "tags": ["En Çok Öne Çıkanlar"],
+      "coupons": [2, 4],
       "favorite": false
     },
     {
@@ -459,18 +289,9 @@
       "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
       "price": 119.99,
       "description": "Chic puffer vest designed for layering in cooler weather.",
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
-      "tags": [
-        "En Çok Eklenenler"
-      ],
-      "coupons": [
-        2,
-        4
-      ],
+      "sizes": ["S", "M", "L"],
+      "tags": ["En Çok Eklenenler"],
+      "coupons": [2, 4],
       "favorite": true
     },
     {
@@ -482,16 +303,9 @@
       "imageUrl": "https://cdn.evkur.com.tr/c/Product/thumbs/a2_f8p0ya_500.jpg",
       "price": 69.99,
       "description": "Elegant table lamp with a modern design to enhance your living space.",
-      "sizes": [
-        "One Size"
-      ],
-      "tags": [
-        "En Çok Eklenenler"
-      ],
-      "coupons": [
-        2,
-        4
-      ],
+      "sizes": ["One Size"],
+      "tags": ["En Çok Eklenenler"],
+      "coupons": [2, 4],
       "favorite": false
     },
     {
@@ -503,16 +317,9 @@
       "imageUrl": "https://cdn.evkur.com.tr/c/Product/thumbs/a2_f8p0ya_500.jpg",
       "price": 49.99,
       "description": "High-quality memory foam pillow for ultimate comfort.",
-      "sizes": [
-        "One Size"
-      ],
-      "tags": [
-        "En Çok Öne Çıkanlar"
-      ],
-      "coupons": [
-        2,
-        4
-      ],
+      "sizes": ["One Size"],
+      "tags": ["En Çok Öne Çıkanlar"],
+      "coupons": [2, 4],
       "favorite": false
     },
     {
@@ -524,16 +331,9 @@
       "imageUrl": "https://cdn.evkur.com.tr/c/Product/thumbs/a2_f8p0ya_500.jpg",
       "price": 89.99,
       "description": "Soft and warm throw blanket for a cozy home atmosphere.",
-      "sizes": [
-        "One Size"
-      ],
-      "tags": [
-        "Flaş Ürünler"
-      ],
-      "coupons": [
-        2,
-        4
-      ],
+      "sizes": ["One Size"],
+      "tags": ["Flaş Ürünler"],
+      "coupons": [2, 4],
       "favorite": false
     },
     {
@@ -545,16 +345,9 @@
       "imageUrl": "https://cdn.evkur.com.tr/c/Product/thumbs/a2_f8p0ya_500.jpg",
       "price": 54.99,
       "description": "Stylish wall clock with a classic design.",
-      "sizes": [
-        "One Size"
-      ],
-      "tags": [
-        "En Çok Eklenenler"
-      ],
-      "coupons": [
-        2,
-        4
-      ],
+      "sizes": ["One Size"],
+      "tags": ["En Çok Eklenenler"],
+      "coupons": [2, 4],
       "favorite": false
     },
     {
@@ -566,16 +359,9 @@
       "imageUrl": "https://cdn.evkur.com.tr/c/Product/thumbs/a2_f8p0ya_500.jpg",
       "price": 79.99,
       "description": "Beautiful vase to enhance your home decor.",
-      "sizes": [
-        "One Size"
-      ],
-      "tags": [
-        "En Çok Öne Çıkanlar"
-      ],
-      "coupons": [
-        2,
-        4
-      ],
+      "sizes": ["One Size"],
+      "tags": ["En Çok Öne Çıkanlar"],
+      "coupons": [2, 4],
       "favorite": false
     },
     {
@@ -587,16 +373,9 @@
       "imageUrl": "https://cdn.evkur.com.tr/c/Product/thumbs/a2_f8p0ya_500.jpg",
       "price": 29.99,
       "description": "Sustainable bamboo cutlery set for eco-conscious living.",
-      "sizes": [
-        "One Size"
-      ],
-      "tags": [
-        "Flaş Ürünler"
-      ],
-      "coupons": [
-        2,
-        4
-      ],
+      "sizes": ["One Size"],
+      "tags": ["Flaş Ürünler"],
+      "coupons": [2, 4],
       "favorite": false
     },
     {
@@ -608,17 +387,9 @@
       "imageUrl": "https://cdn.evkur.com.tr/c/Product/thumbs/a2_f8p0ya_500.jpg",
       "price": 159.99,
       "description": "Modern area rug to complement your home decor.",
-      "sizes": [
-        "5x7 ft",
-        "8x10 ft"
-      ],
-      "tags": [
-        "En Çok Eklenenler"
-      ],
-      "coupons": [
-        2,
-        4
-      ],
+      "sizes": ["5x7 ft", "8x10 ft"],
+      "tags": ["En Çok Eklenenler"],
+      "coupons": [2, 4],
       "favorite": false
     },
     {
@@ -630,16 +401,9 @@
       "imageUrl": "https://cdn.evkur.com.tr/c/Product/thumbs/a2_f8p0ya_500.jpg",
       "price": 129.99,
       "description": "Air purifier to ensure clean and fresh air at home.",
-      "sizes": [
-        "One Size"
-      ],
-      "tags": [
-        "En Çok Öne Çıkanlar"
-      ],
-      "coupons": [
-        2,
-        4
-      ],
+      "sizes": ["One Size"],
+      "tags": ["En Çok Öne Çıkanlar"],
+      "coupons": [2, 4],
       "favorite": false
     },
     {
@@ -651,16 +415,9 @@
       "imageUrl": "https://cdn.evkur.com.tr/c/Product/thumbs/a2_f8p0ya_500.jpg",
       "price": 199.99,
       "description": "Handcrafted wooden shelves for rustic home decor.",
-      "sizes": [
-        "One Size"
-      ],
-      "tags": [
-        "Flaş Ürünler"
-      ],
-      "coupons": [
-        2,
-        4
-      ],
+      "sizes": ["One Size"],
+      "tags": ["Flaş Ürünler"],
+      "coupons": [2, 4],
       "favorite": false
     },
     {
@@ -672,16 +429,9 @@
       "imageUrl": "https://cdn.evkur.com.tr/c/Product/thumbs/a2_f8p0ya_500.jpg",
       "price": 239.99,
       "description": "Sleek coffee table with a contemporary design.",
-      "sizes": [
-        "One Size"
-      ],
-      "tags": [
-        "En Çok Eklenenler"
-      ],
-      "coupons": [
-        2,
-        4
-      ],
+      "sizes": ["One Size"],
+      "tags": ["En Çok Eklenenler"],
+      "coupons": [2, 4],
       "favorite": false
     },
     {
@@ -693,16 +443,9 @@
       "imageUrl": "https://cdn.evkur.com.tr/c/Product/thumbs/a2_f8p0ya_500.jpg",
       "price": 119.99,
       "description": "Comfortable and stylish bedding set for a perfect night's sleep.",
-      "sizes": [
-        "Queen",
-        "King"
-      ],
-      "tags": [
-        "En Çok Öne Çıkanlar"
-      ],
-      "coupons": [
-        2
-      ],
+      "sizes": ["Queen", "King"],
+      "tags": ["En Çok Öne Çıkanlar"],
+      "coupons": [2],
       "favorite": false
     },
     {
@@ -714,15 +457,9 @@
       "imageUrl": "https://media.wired.com/photos/643d7e61cdba28f045ac3f59/4:3/w_2136,h_1602,c_limit/macbook_sec_GettyImages-1368668740.jpg",
       "price": 129.99,
       "description": "High-fidelity wireless headphones with noise-canceling feature.",
-      "sizes": [
-        "One Size"
-      ],
-      "tags": [
-        "Flaş Ürünler"
-      ],
-      "coupons": [
-        2
-      ],
+      "sizes": ["One Size"],
+      "tags": ["Flaş Ürünler"],
+      "coupons": [2],
       "favorite": false
     },
     {
@@ -734,17 +471,10 @@
       "imageUrl": "https://media.wired.com/photos/643d7e61cdba28f045ac3f59/4:3/w_2136,h_1602,c_limit/macbook_sec_GettyImages-1368668740.jpg",
       "price": 99.99,
       "description": "Voice-activated smart home assistant to manage your daily tasks.",
-      "sizes": [
-        "One Size"
-      ],
-      "tags": [
-        "En Çok Eklenenler"
-      ],
-      "coupons": [
-        2,
-        4
-      ],
-      "favorite": false
+      "sizes": ["One Size"],
+      "tags": ["En Çok Eklenenler"],
+      "coupons": [2, 4],
+      "favorite": true
     },
     {
       "id": 92,
@@ -755,17 +485,9 @@
       "imageUrl": "https://media.wired.com/photos/643d7e61cdba28f045ac3f59/4:3/w_2136,h_1602,c_limit/macbook_sec_GettyImages-1368668740.jpg",
       "price": 799.99,
       "description": "High-definition smart TV with streaming capabilities.",
-      "sizes": [
-        "55 inch",
-        "65 inch"
-      ],
-      "tags": [
-        "En Çok Öne Çıkanlar"
-      ],
-      "coupons": [
-        2,
-        4
-      ],
+      "sizes": ["55 inch", "65 inch"],
+      "tags": ["En Çok Öne Çıkanlar"],
+      "coupons": [2, 4],
       "favorite": false
     },
     {
@@ -777,16 +499,9 @@
       "imageUrl": "https://media.wired.com/photos/643d7e61cdba28f045ac3f59/4:3/w_2136,h_1602,c_limit/macbook_sec_GettyImages-1368668740.jpg",
       "price": 34.99,
       "description": "High-capacity portable power bank for charging devices on the go.",
-      "sizes": [
-        "One Size"
-      ],
-      "tags": [
-        "Flaş Ürünler"
-      ],
-      "coupons": [
-        2,
-        4
-      ],
+      "sizes": ["One Size"],
+      "tags": ["Flaş Ürünler"],
+      "coupons": [2, 4],
       "favorite": false
     },
     {
@@ -798,15 +513,9 @@
       "imageUrl": "https://media.wired.com/photos/643d7e61cdba28f045ac3f59/4:3/w_2136,h_1602,c_limit/macbook_sec_GettyImages-1368668740.jpg",
       "price": 199.99,
       "description": "Smartwatch with advanced fitness tracking features.",
-      "sizes": [
-        "One Size"
-      ],
-      "tags": [
-        "En Çok Eklenenler"
-      ],
-      "coupons": [
-        2
-      ],
+      "sizes": ["One Size"],
+      "tags": ["En Çok Eklenenler"],
+      "coupons": [2],
       "favorite": false
     },
     {
@@ -818,12 +527,8 @@
       "imageUrl": "https://media.wired.com/photos/643d7e61cdba28f045ac3f59/4:3/w_2136,h_1602,c_limit/macbook_sec_GettyImages-1368668740.jpg",
       "price": 89.99,
       "description": "Compact and comfortable earbuds with noise-canceling technology.",
-      "sizes": [
-        "One Size"
-      ],
-      "tags": [
-        "En Çok Öne Çıkanlar"
-      ],
+      "sizes": ["One Size"],
+      "tags": ["En Çok Öne Çıkanlar"],
       "coupons": []
     },
     {
@@ -835,15 +540,9 @@
       "imageUrl": "https://media.wired.com/photos/643d7e61cdba28f045ac3f59/4:3/w_2136,h_1602,c_limit/macbook_sec_GettyImages-1368668740.jpg",
       "price": 49.99,
       "description": "Convenient wireless charging pad for your smartphone.",
-      "sizes": [
-        "One Size"
-      ],
-      "tags": [
-        "Flaş Ürünler"
-      ],
-      "coupons": [
-        4
-      ],
+      "sizes": ["One Size"],
+      "tags": ["Flaş Ürünler"],
+      "coupons": [4],
       "favorite": false
     },
     {
@@ -855,16 +554,9 @@
       "imageUrl": "https://media.wired.com/photos/643d7e61cdba28f045ac3f59/4:3/w_2136,h_1602,c_limit/macbook_sec_GettyImages-1368668740.jpg",
       "price": 159.99,
       "description": "Portable external SSD with high-speed data transfer capabilities.",
-      "sizes": [
-        "One Size"
-      ],
-      "tags": [
-        "En Çok Eklenenler"
-      ],
-      "coupons": [
-        2,
-        4
-      ],
+      "sizes": ["One Size"],
+      "tags": ["En Çok Eklenenler"],
+      "coupons": [2, 4],
       "favorite": false
     },
     {
@@ -876,12 +568,8 @@
       "imageUrl": "https://media.wired.com/photos/643d7e61cdba28f045ac3f59/4:3/w_2136,h_1602,c_limit/macbook_sec_GettyImages-1368668740.jpg",
       "price": 299.99,
       "description": "Complete home security camera system with night vision and motion detection.",
-      "sizes": [
-        "One Size"
-      ],
-      "tags": [
-        "En Çok Öne Çıkanlar"
-      ],
+      "sizes": ["One Size"],
+      "tags": ["En Çok Öne Çıkanlar"],
       "coupons": [],
       "favorite": false
     },
@@ -894,15 +582,9 @@
       "imageUrl": "https://media.wired.com/photos/643d7e61cdba28f045ac3f59/4:3/w_2136,h_1602,c_limit/macbook_sec_GettyImages-1368668740.jpg",
       "price": 69.99,
       "description": "Portable Bluetooth speaker with high-quality sound.",
-      "sizes": [
-        "One Size"
-      ],
-      "tags": [
-        "Flaş Ürünler"
-      ],
-      "coupons": [
-        4
-      ],
+      "sizes": ["One Size"],
+      "tags": ["Flaş Ürünler"],
+      "coupons": [4],
       "favorite": false
     },
     {
@@ -911,21 +593,12 @@
       "category": "Spor",
       "color": "Blue",
       "productName": "Running Shoes",
-      "imageUrl": "https://example.com/images/running_shoes.jpg",
+      "imageUrl": "https://media.wired.com/photos/643d7e61cdba28f045ac3f59/4:3/w_2136,h_1602,c_limit/macbook_sec_GettyImages-1368668740.jpg",
       "price": 119.99,
       "description": "Durable and comfortable running shoes for athletes.",
-      "sizes": [
-        "40",
-        "41",
-        "42",
-        "43"
-      ],
-      "tags": [
-        "En Çok Öne Çıkanlar"
-      ],
-      "coupons": [
-        2
-      ],
+      "sizes": ["40", "41", "42", "43"],
+      "tags": ["En Çok Öne Çıkanlar"],
+      "coupons": [2],
       "favorite": false
     },
     {
@@ -937,15 +610,9 @@
       "imageUrl": "https://example.com/images/yoga_mat.jpg",
       "price": 39.99,
       "description": "Non-slip yoga mat with adjustable thickness for comfort during practice.",
-      "sizes": [
-        "One Size"
-      ],
-      "tags": [
-        "Flaş Ürünler"
-      ],
-      "coupons": [
-        4
-      ],
+      "sizes": ["One Size"],
+      "tags": ["Flaş Ürünler"],
+      "coupons": [4],
       "favorite": false
     },
     {
@@ -957,12 +624,8 @@
       "imageUrl": "https://images.squarespace-cdn.com/content/v1/644927389a1ab06f2f12a9fe/d2cef23b-98a3-4e23-9835-e24209de58f5/IMG_4073.jpg",
       "price": 24.99,
       "description": "Set of resistance bands for strength training and flexibility exercises.",
-      "sizes": [
-        "One Size"
-      ],
-      "tags": [
-        "En Çok Eklenenler"
-      ],
+      "sizes": ["One Size"],
+      "tags": ["En Çok Eklenenler"],
       "coupons": [],
       "favorite": false
     },
@@ -975,15 +638,9 @@
       "imageUrl": "https://images.squarespace-cdn.com/content/v1/644927389a1ab06f2f12a9fe/d2cef23b-98a3-4e23-9835-e24209de58f5/IMG_4073.jpg",
       "price": 149.99,
       "description": "Set of adjustable dumbbells for versatile workouts.",
-      "sizes": [
-        "One Size"
-      ],
-      "tags": [
-        "En Çok Öne Çıkanlar"
-      ],
-      "coupons": [
-        2
-      ],
+      "sizes": ["One Size"],
+      "tags": ["En Çok Öne Çıkanlar"],
+      "coupons": [2],
       "favorite": false
     },
     {
@@ -995,15 +652,9 @@
       "imageUrl": "https://images.squarespace-cdn.com/content/v1/644927389a1ab06f2f12a9fe/d2cef23b-98a3-4e23-9835-e24209de58f5/IMG_4073.jpg",
       "price": 15.99,
       "description": "Durable sports water bottle for hydration during exercise.",
-      "sizes": [
-        "One Size"
-      ],
-      "tags": [
-        "Flaş Ürünler"
-      ],
-      "coupons": [
-        4
-      ],
+      "sizes": ["One Size"],
+      "tags": ["Flaş Ürünler"],
+      "coupons": [4],
       "favorite": false
     },
     {
@@ -1015,14 +666,8 @@
       "imageUrl": "https://images.squarespace-cdn.com/content/v1/644927389a1ab06f2f12a9fe/d2cef23b-98a3-4e23-9835-e24209de58f5/IMG_4073.jpg",
       "price": 29.99,
       "description": "Breathable and comfortable shorts for running and workouts.",
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
-      "tags": [
-        "En Çok Eklenenler"
-      ],
+      "sizes": ["S", "M", "L"],
+      "tags": ["En Çok Eklenenler"],
       "coupons": [],
       "favorite": false
     },
@@ -1035,12 +680,8 @@
       "imageUrl": "https://images.squarespace-cdn.com/content/v1/644927389a1ab06f2f12a9fe/d2cef23b-98a3-4e23-9835-e24209de58f5/IMG_4073.jpg",
       "price": 179.99,
       "description": "Sports watch with various workout tracking features.",
-      "sizes": [
-        "One Size"
-      ],
-      "tags": [
-        "En Çok Öne Çıkanlar"
-      ],
+      "sizes": ["One Size"],
+      "tags": ["En Çok Öne Çıkanlar"],
       "coupons": [],
       "favorite": false
     },
@@ -1053,12 +694,8 @@
       "imageUrl": "https://images.squarespace-cdn.com/content/v1/644927389a1ab06f2f12a9fe/d2cef23b-98a3-4e23-9835-e24209de58f5/IMG_4073.jpg",
       "price": 39.99,
       "description": "Spacious and durable gym bag for all your fitness needs.",
-      "sizes": [
-        "One Size"
-      ],
-      "tags": [
-        "Flaş Ürünler"
-      ],
+      "sizes": ["One Size"],
+      "tags": ["Flaş Ürünler"],
       "coupons": [],
       "favorite": false
     },
@@ -1071,16 +708,9 @@
       "imageUrl": "https://images.squarespace-cdn.com/content/v1/644927389a1ab06f2f12a9fe/d2cef23b-98a3-4e23-9835-e24209de58f5/IMG_4073.jpg",
       "price": 69.99,
       "description": "High-quality boxing gloves for professional and amateur training.",
-      "sizes": [
-        "M",
-        "L"
-      ],
-      "tags": [
-        "En Çok Eklenenler"
-      ],
-      "coupons": [
-        2
-      ],
+      "sizes": ["M", "L"],
+      "tags": ["En Çok Eklenenler"],
+      "coupons": [2],
       "favorite": false
     },
     {
@@ -1092,17 +722,9 @@
       "imageUrl": "https://images.squarespace-cdn.com/content/v1/644927389a1ab06f2f12a9fe/d2cef23b-98a3-4e23-9835-e24209de58f5/IMG_4073.jpg",
       "price": 34.99,
       "description": "Stretchy and comfortable leggings for workouts and casual wear.",
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
-      "tags": [
-        "En Çok Öne Çıkanlar"
-      ],
-      "coupons": [
-        4
-      ],
+      "sizes": ["S", "M", "L"],
+      "tags": ["En Çok Öne Çıkanlar"],
+      "coupons": [4],
       "favorite": false
     }
   ],

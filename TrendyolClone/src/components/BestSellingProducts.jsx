@@ -1,37 +1,39 @@
 import React, { useEffect } from "react";
 import Product from "./Product";
 import { useDispatch, useSelector } from "react-redux";
-import { getEnCokEklenenlerList } from "../redux/Product/productSlice";
+import { getBestSellingList } from "../redux/Product/productSlice";
 import "../styles/PopularProduct.css";
 import { useNavigate } from "react-router-dom";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
-function PopularProduct() {
-  const { popularList, productStatus } = useSelector((store) => store.product);
+function BestSellingProducts() {
+  const { bestSellingList, productStatus } = useSelector(
+    (store) => store.product
+  );
   const dispatch = useDispatch();
   const nav = useNavigate();
 
   useEffect(() => {
     if (productStatus === "success") {
-      dispatch(getEnCokEklenenlerList());
+      dispatch(getBestSellingList());
     }
   }, [dispatch, productStatus]);
 
   const scrollLeft = () => {
-    document.getElementById("popularList").scrollLeft -= 1000;
+    document.getElementById("bestSellingList").scrollLeft -= 1000;
   };
 
   const scrollRight = () => {
-    document.getElementById("popularList").scrollLeft += 1000;
+    document.getElementById("bestSellingList").scrollLeft += 1000;
   };
 
   return (
     <div className="popularContainer">
       <div className="popularTop">
-        <h3 className="popularHeader">Popüler Ürünler</h3>
+        <h3 className="popularHeader">En Cok Satan Ürünler</h3>
         <button
           className="popularAllButton"
-          onClick={() => nav("/enCokEklenenler")}
+          onClick={() => nav("/enCokSatanlar")}
         >
           Tümünü Gör <FaAngleRight className="allIcon" />
         </button>
@@ -40,8 +42,8 @@ function PopularProduct() {
         <div className="scrollButton scrollLeft">
           <FaAngleLeft className="scrollIcon " onClick={scrollLeft} />
         </div>
-        <div className="popularList" id="popularList">
-          {popularList.map((popularItem) => (
+        <div className="popularList" id="bestSellingList">
+          {bestSellingList.map((popularItem) => (
             <Product
               popularItem={popularItem}
               key={`popular-${popularItem.id}`}
@@ -57,4 +59,4 @@ function PopularProduct() {
   );
 }
 
-export default PopularProduct;
+export default BestSellingProducts;
