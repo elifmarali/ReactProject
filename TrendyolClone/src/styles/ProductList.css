@@ -1,0 +1,13 @@
+.productListContainer {
+    padding: 20px 80px;
+
+}
+
+.productList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 10px 0px;
+}

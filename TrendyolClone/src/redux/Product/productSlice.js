@@ -23,13 +23,24 @@ export let favoriteClick = createAsyncThunk("favoriteClick",
     }
 )
 
+export let getCategorFilterProductList = createAsyncThunk("getCategorFilterProductList",
+    async (category) => {
+        const response = await axios.get(`http://localhost:3000/products`);
+        const categoryList = response.data.filter((product) =>
+            product.category === category
+        )
+        return categoryList;
+    })
+
 const initialState = {
     productList: [],
     productStatus: null,
     categoryList: [],
     popularList: [],
     flashList: [],
-    bestSellingList: []
+    bestSellingList: [],
+    categoryProducts: [],
+    categoryStatus: null
 }
 export const productSlice = createSlice({
     name: "product",
@@ -40,10 +51,12 @@ export const productSlice = createSlice({
             state.productStatus = null; // Durumu sıfırla
             state.categoryList = []; // Kategori listesini sıfırla
             state.popularList = []; // Popüler listeyi sıfırla
+            state.bestSellingList = [];
+            state.flashList = []
         },
         getCategoryList: (state) => {
             if (state.productStatus === 'success') {
-                state.productList.map((prodoctItem) => {
+                state.productList.forEach((prodoctItem) => {
                     if (!(state.categoryList.includes(prodoctItem.category))) {
                         state.categoryList.push(prodoctItem.category);
                     }
@@ -52,19 +65,20 @@ export const productSlice = createSlice({
         },
         getEnCokEklenenlerList: (state) => {
             if (state.productStatus === 'success') {
-                state.productList.map((product) => {
-                    product.tags.map((tag) => {
+                state.productList.forEach((product) => {
+                    product.tags.forEach((tag) => {
                         if (tag.toLowerCase().includes("en çok eklenenler")) {
                             state.popularList.push(product);
                         }
-                    })
-                })
+                    });
+                });
             }
         },
+
         getFlashList: (state) => {
             if (state.productStatus === 'success') {
-                state.productList.map((product) => {
-                    product.tags.map((tag) => {
+                state.productList.forEach((product) => {
+                    product.tags.forEach((tag) => {
                         if (tag.toLowerCase().includes("flaş ürünler")) {
                             state.flashList.push(product);
                         }
@@ -74,8 +88,8 @@ export const productSlice = createSlice({
         },
         getBestSellingList: (state) => {
             if (state.productStatus === 'success') {
-                state.productList.map((product) => {
-                    product.tags.map((tag) => {
+                state.productList.forEach((product) => {
+                    product.tags.forEach((tag) => {
                         if (tag.toLowerCase().includes("en çok öne çıkanlar")) {
                             state.bestSellingList.push(product)
                         }
@@ -97,7 +111,17 @@ export const productSlice = createSlice({
             .addCase(getProductList.rejected, ((state) => {
                 state.productStatus = "error";
             }))
-
+            .addCase(getCategorFilterProductList.fulfilled, ((state, action) => {
+                console.log(action.payload);
+                state.categoryProducts = action.payload;
+                state.categoryStatus = "success"
+            }))
+            .addCase(getCategorFilterProductList.pending, ((state, action) => {
+                state.categoryStatus = "loading"
+            }))
+            .addCase(getCategorFilterProductList.rejected, ((state, action) => {
+                state.categoryStatus = "error";
+            }))
     }
 })
 

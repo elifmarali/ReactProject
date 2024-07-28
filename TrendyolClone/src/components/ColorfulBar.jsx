@@ -17,7 +17,7 @@ function ColorfulBar() {
       >
         En Çok Öne Çıkanlar
       </div>
-      <div className="colorfulItem pink" onClick={() => nav("/flashUrunler")}>
+      <div className="colorfulItem pink" onClick={() => nav("/flash")}>
         Flaş Ürünler
       </div>
     </div>

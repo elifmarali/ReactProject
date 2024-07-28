@@ -37,21 +37,21 @@ function PopularProduct() {
         </button>
       </div>
       <div className="scrollButtons">
-        <div className="scrollButton scrollLeft">
-          <FaAngleLeft className="scrollIcon " onClick={scrollLeft} />
+        <div className="scrollButton scrollLeft" onClick={scrollLeft}>
+          <FaAngleLeft className="scrollIcon" />
         </div>
         <div className="popularList" id="popularList">
-          {popularList.map((popularItem) => (
+          {popularList?.map((popularItem) => (
             <Product
               popularItem={popularItem}
-              key={`popular-${popularItem.id}`}
+              key={popularItem?.id}
               className="popularItem"
             />
           ))}
         </div>
-        <div className="scrollButton scrollRight">
-          <FaAngleRight className="scrollIcon " onClick={scrollRight} />
-        </div>{" "}
+        <div className="scrollButton scrollRight" onClick={scrollRight}>
+          <FaAngleRight className="scrollIcon" />
+        </div>
       </div>
     </div>
   );

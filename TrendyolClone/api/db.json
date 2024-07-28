@@ -26,7 +26,7 @@
       "sizes": ["S", "M", "L", "XL"],
       "tags": ["Flaş Ürünler"],
       "coupons": [2, 4],
-      "favorite": false
+      "favorite": true
     },
     {
       "id": 26,
@@ -34,7 +34,7 @@
       "category": "Erkek",
       "color": "Blue",
       "productName": "Blazer",
-      "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
+      "imageUrl": "https://i.pinimg.com/564x/23/f4/de/23f4de3b38b1f0dc63426f410c22e0eb.jpg",
       "price": 219.99,
       "description": "Timeless blue blazer for formal and semi-formal occasions.",
       "sizes": ["M", "L", "XL"],
@@ -62,7 +62,7 @@
       "category": "Aksesuar",
       "color": "Red",
       "productName": "Scarf",
-      "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
+      "imageUrl": "https://cdn.ikea.com.tr/ozgur-icerik/kategori/dekoratif-aksesuarlar/dekoratif-aksesuarlar-iyi-fikirler-3.jpg",
       "price": 59.99,
       "description": "Soft woolen scarf to keep you warm during winter.",
       "sizes": ["One Size"],
@@ -76,7 +76,7 @@
       "category": "Erkek",
       "color": "Navy",
       "productName": "Pants",
-      "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
+      "imageUrl": "https://i.pinimg.com/564x/23/f4/de/23f4de3b38b1f0dc63426f410c22e0eb.jpg",
       "price": 99.99,
       "description": "Comfortable track pants for sports and leisure.",
       "sizes": ["M", "L", "XL"],
@@ -90,7 +90,7 @@
       "category": "Çanta",
       "color": "Black",
       "productName": "Backpack",
-      "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
+      "imageUrl": "https://cdn.aldoshoes.com.tr/mnresize/800/800/media/catalog/product/b/a/barbietphndl-660-002-029___1.jpg",
       "price": 89.99,
       "description": "Stylish and practical backpack for everyday use.",
       "sizes": ["One Size"],
@@ -118,7 +118,7 @@
       "category": "Erkek",
       "color": "Brown",
       "productName": "Shoes",
-      "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
+      "imageUrl": "https://i.pinimg.com/564x/23/f4/de/23f4de3b38b1f0dc63426f410c22e0eb.jpg",
       "price": 149.99,
       "description": "Formal dress shoes with a polished finish.",
       "sizes": ["40", "41", "42", "43"],
@@ -132,7 +132,7 @@
       "category": "Aksesuar",
       "color": "Beige",
       "productName": "Hat",
-      "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
+      "imageUrl": "https://cdn.ikea.com.tr/ozgur-icerik/kategori/dekoratif-aksesuarlar/dekoratif-aksesuarlar-iyi-fikirler-3.jpg",
       "price": 29.99,
       "description": "Protective and stylish sun hat for summer days.",
       "sizes": ["One Size"],
@@ -188,7 +188,7 @@
       "category": "Erkek",
       "color": "Red",
       "productName": "Shorts",
-      "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
+      "imageUrl": "https://i.pinimg.com/564x/23/f4/de/23f4de3b38b1f0dc63426f410c22e0eb.jpg",
       "price": 49.99,
       "description": "Breathable gym shorts ideal for workouts.",
       "sizes": ["M", "L", "XL"],
@@ -202,7 +202,7 @@
       "category": "Erkek",
       "color": "Gray",
       "productName": "Shirt",
-      "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
+      "imageUrl": "https://i.pinimg.com/564x/23/f4/de/23f4de3b38b1f0dc63426f410c22e0eb.jpg",
       "price": 79.99,
       "description": "Relaxed long sleeve shirt suitable for casual wear.",
       "sizes": ["M", "L", "XL"],
@@ -230,7 +230,7 @@
       "category": "Erkek",
       "color": "Gray",
       "productName": "Shorts",
-      "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
+      "imageUrl": "https://i.pinimg.com/564x/23/f4/de/23f4de3b38b1f0dc63426f410c22e0eb.jpg",
       "price": 49.99,
       "description": "Breathable mesh shorts for sports activities.",
       "sizes": ["M", "L", "XL"],
@@ -244,7 +244,7 @@
       "category": "Çanta",
       "color": "Pink",
       "productName": "Bag",
-      "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
+      "imageUrl": "https://cdn.aldoshoes.com.tr/mnresize/800/800/media/catalog/product/b/a/barbietphndl-660-002-029___1.jpg",
       "price": 79.99,
       "description": "Stylish crossbody bag for a chic everyday look.",
       "sizes": ["One Size"],
@@ -258,7 +258,7 @@
       "category": "Aksesuar",
       "color": "Gray",
       "productName": "Gloves",
-      "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
+      "imageUrl": "https://cdn.ikea.com.tr/ozgur-icerik/kategori/dekoratif-aksesuarlar/dekoratif-aksesuarlar-iyi-fikirler-3.jpg",
       "price": 29.99,
       "description": "Warm wool gloves to keep your hands cozy.",
       "sizes": ["One Size"],
@@ -376,7 +376,7 @@
       "sizes": ["One Size"],
       "tags": ["Flaş Ürünler"],
       "coupons": [2, 4],
-      "favorite": false
+      "favorite": true
     },
     {
       "id": 87,
@@ -418,7 +418,7 @@
       "sizes": ["One Size"],
       "tags": ["Flaş Ürünler"],
       "coupons": [2, 4],
-      "favorite": false
+      "favorite": true
     },
     {
       "id": 90,
@@ -543,7 +543,7 @@
       "sizes": ["One Size"],
       "tags": ["Flaş Ürünler"],
       "coupons": [4],
-      "favorite": false
+      "favorite": true
     },
     {
       "id": 97,
@@ -593,26 +593,12 @@
       "category": "Spor",
       "color": "Blue",
       "productName": "Running Shoes",
-      "imageUrl": "https://media.wired.com/photos/643d7e61cdba28f045ac3f59/4:3/w_2136,h_1602,c_limit/macbook_sec_GettyImages-1368668740.jpg",
+      "imageUrl": "https://images.squarespace-cdn.com/content/v1/644927389a1ab06f2f12a9fe/d2cef23b-98a3-4e23-9835-e24209de58f5/IMG_4073.jpg",
       "price": 119.99,
       "description": "Durable and comfortable running shoes for athletes.",
       "sizes": ["40", "41", "42", "43"],
       "tags": ["En Çok Öne Çıkanlar"],
       "coupons": [2],
-      "favorite": false
-    },
-    {
-      "id": 82,
-      "name": "Adjustable Yoga Mat",
-      "category": "Spor",
-      "color": "Green",
-      "productName": "Yoga Mat",
-      "imageUrl": "https://example.com/images/yoga_mat.jpg",
-      "price": 39.99,
-      "description": "Non-slip yoga mat with adjustable thickness for comfort during practice.",
-      "sizes": ["One Size"],
-      "tags": ["Flaş Ürünler"],
-      "coupons": [4],
       "favorite": false
     },
     {

@@ -2,7 +2,10 @@ import React, { useEffect } from "react";
 import { FaShoppingBasket } from "react-icons/fa";
 import "../styles/Navbar.css";
 import { useDispatch, useSelector } from "react-redux";
-import { getCategoryList } from "../redux/Product/productSlice";
+import {
+  getCategorFilterProductList,
+  getCategoryList,
+} from "../redux/Product/productSlice";
 import { useNavigate } from "react-router-dom";
 function Navbar() {
   const nav = useNavigate();
@@ -13,6 +16,11 @@ function Navbar() {
       dispatch(getCategoryList());
     }
   }, [dispatch, productStatus]);
+
+  const handleCategorySubmit = (category) => {
+    dispatch(getCategorFilterProductList(category));
+    nav(`/${category}`);
+  };
   return (
     <div className="categories">
       {categoryList?.map((category) => {
@@ -22,9 +30,7 @@ function Navbar() {
               key={category}
               id={category}
               className="categoryText"
-              onClick={() => {
-                nav(`/${category}`);
-              }}
+              onClick={() => handleCategorySubmit(category)}
             >
               {category}
             </div>

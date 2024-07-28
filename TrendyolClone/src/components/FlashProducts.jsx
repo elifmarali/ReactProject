@@ -8,9 +8,10 @@ import Product from "./Product";
 import { useNavigate } from "react-router-dom";
 
 function FlashProducts() {
-  const nav = useNavigate();
   const { flashList, productStatus } = useSelector((store) => store.product);
   const dispatch = useDispatch();
+  const nav = useNavigate();
+
   useEffect(() => {
     if (productStatus === "success") {
       dispatch(getFlashList());
@@ -37,21 +38,21 @@ function FlashProducts() {
         </button>
       </div>
       <div className="scrollButtons">
-        <div className="scrollButton scrollLeft">
-          <FaAngleLeft className="scrollIcon " onClick={scrollLeft} />
+        <div className="scrollButton scrollLeft" onClick={scrollLeft}>
+          <FaAngleLeft className="scrollIcon" />
         </div>
         <div className="popularList" id="flashList">
-          {flashList.map((flashItem) => (
+          {flashList?.map((flashItem) => (
             <Product
               flashItem={flashItem}
-              key={`flash-${flashItem.id}`}
-              className="popularItem"
+              key={flashItem?.id}
+              className="popularItem flashItem"
             />
           ))}
         </div>
-        <div className="scrollButton scrollRight">
-          <FaAngleRight className="scrollIcon " onClick={scrollRight} />
-        </div>{" "}
+        <div className="scrollButton scrollRight" onClick={scrollRight}>
+          <FaAngleRight className="scrollIcon" />
+        </div>
       </div>
     </div>
   );

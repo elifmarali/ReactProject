@@ -7,31 +7,35 @@ import {
   resetProductList,
 } from "../redux/Product/productSlice";
 import { useDispatch } from "react-redux";
-import ProductList from "../components/ProductList";
 import ColorfulBar from "../components/ColorfulBar";
 import PopularProduct from "../components/PopularProducts";
-import { useLocation } from "react-router-dom";
 import FlashProducts from "../components/FlashProducts";
 import BestSellingProducts from "../components/BestSellingProducts";
+import Footer from "../components/Footer";
+import { useLocation } from "react-router-dom";
+
 function Home() {
-  const dispatch = useDispatch();
   const location = useLocation();
-  useEffect(() => {
-    dispatch(getProductList());
-  }, [dispatch]);
+  const dispatch = useDispatch();
 
   useEffect(() => {
+    dispatch(getProductList());
+  }, [location]);
+  useEffect(() => {
     dispatch(resetProductList());
-  }, [location, dispatch]);
+  }, [location]);
   return (
-    <div className="home">
-      <SearchBar />
-      <Navbar />
-      <ColorfulBar />
-      <PopularProduct />
-      <FlashProducts />
-      <BestSellingProducts />
-    </div>
+    <>
+      <div className="home">
+        <SearchBar />
+        <Navbar />
+        <ColorfulBar />
+        <PopularProduct />
+        <FlashProducts />
+        <BestSellingProducts />
+      </div>
+      <Footer />
+    </>
   );
 }
 

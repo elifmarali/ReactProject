@@ -33,7 +33,7 @@ function BestSellingProducts() {
         <h3 className="popularHeader">En Cok Satan Ürünler</h3>
         <button
           className="popularAllButton"
-          onClick={() => nav("/enCokSatanlar")}
+          onClick={() => nav("/enCokOneCıkanlar")}
         >
           Tümünü Gör <FaAngleRight className="allIcon" />
         </button>
@@ -43,17 +43,17 @@ function BestSellingProducts() {
           <FaAngleLeft className="scrollIcon " onClick={scrollLeft} />
         </div>
         <div className="popularList" id="bestSellingList">
-          {bestSellingList.map((popularItem) => (
+          {bestSellingList?.map((popularItem) => (
             <Product
               popularItem={popularItem}
-              key={`popular-${popularItem.id}`}
-              className="popularItem"
+              key={popularItem?.id}
+              className="popularItem bestSelling"
             />
           ))}
         </div>
         <div className="scrollButton scrollRight">
           <FaAngleRight className="scrollIcon " onClick={scrollRight} />
-        </div>{" "}
+        </div>
       </div>
     </div>
   );

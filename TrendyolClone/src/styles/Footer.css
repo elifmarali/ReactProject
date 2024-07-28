@@ -1,0 +1,89 @@
+.footerContainer {
+    background-color: #000;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 90px 10px 90px;
+    color: #fff;
+    gap: 30px;
+}
+
+.footerTop,
+.footerBottom {
+    display: flex;
+    gap: 20px;
+}
+
+.footerTop {
+    justify-content: space-between;
+}
+
+.footerBottom {
+    justify-content: space-between;
+    width: 42%;
+}
+
+.footerItem {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footerItemHeader {
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.footerItemHeader:hover {
+    text-decoration: underline;
+}
+
+.footerItemBottom {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footerItemText {
+    font-size: 11px;
+    font-weight: 100;
+}
+
+.footerItemText:hover {
+    text-decoration: underline;
+}
+
+.footerCardContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.footerCard {
+    width: 60px;
+    height: 25px;
+}
+
+.footerBottomItemHeader {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+
+.footerMobileApp {
+    width: 155px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.footerItemBottomApp {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
