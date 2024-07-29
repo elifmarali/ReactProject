@@ -1,0 +1,28 @@
+.detail {
+    display: flex;
+}
+
+.detailImage {
+    width: 400px;
+    height: 600px;
+}
+
+.favorite:hover .productFavoriteIcon {
+    color: #f27b1f;
+}
+
+.favorite:hover.favoriteOn:hover .productFavoriteIcon {
+    color: #fff;
+}
+
+.favoriteOn:hover.productFavoriteIcon {
+    color: #fff;
+}
+
+.favoriteOn.favorite {
+    background: #f27b1f;
+}
+
+.favoriteOn.productFavoriteIcon {
+    color: #fff;
+}

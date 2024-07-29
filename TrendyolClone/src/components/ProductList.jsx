@@ -29,7 +29,6 @@ function ProductList() {
   useEffect(() => {
     setProducts([]);
   }, [location]);
-  console.log(categoryStatus, categoryProducts);
 
   useEffect(() => {
     if (paramFormat === "encokeklenenler") {

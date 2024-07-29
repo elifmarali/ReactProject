@@ -58,17 +58,17 @@ function Product({ product, popularItem, flashItem, className }) {
         src={item.imageUrl}
         alt="ürün görseli"
         className={`productImage ${className}`}
-        onClick={() => nav(`productDetails/${item.id}`)}
+        onClick={() => nav(`/productDetails/${item.id}`)}
       />
       <div
         className={`productTitle ${className}`}
-        onClick={() => nav(`productDetails/${item.id}`)}
+        onClick={() => nav(`/productDetails/${item.id}`)}
       >
         {item.name}
       </div>
       <div
         className={`productPrice ${className}`}
-        onClick={() => nav(`productDetails/${item.id}`)}
+        onClick={() => nav(`/productDetails/${item.id}`)}
       >
         {item.price} TL
       </div>

@@ -1,20 +1,27 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
+
+const API_URL = "http://localhost:3000/products";
 export let getProductList = createAsyncThunk(
     "getProductList", async () => {
-        const response = await axios.get("http://localhost:3000/products")
+        const response = await axios.get(API_URL)
         return response.data;
     }
 )
 
 export let favoriteClick = createAsyncThunk("favoriteClick",
-    async (id, { getState }) => {
-        const state = getState()
-        const currentProduct = state.product.productList.find(product => product.id === id);
+    async (id, { getState, dispatch }) => {
+        dispatch(getProductList())
+        const state = getState();
+        console.log(state);
+        let currentProduct = state.product.productList.find(product => product.id === id);
+        if (currentProduct === undefined) {
+            currentProduct = state.product.productDetail;
+        }
         const currentProductFavorite = currentProduct.favorite;
 
-        const response = await axios.patch(`http://localhost:3000/products/${id}`, {
+        const response = await axios.patch(`${API_URL}/${id}`, {
             ...currentProduct,
             favorite: !currentProductFavorite
         });
@@ -25,12 +32,20 @@ export let favoriteClick = createAsyncThunk("favoriteClick",
 
 export let getCategorFilterProductList = createAsyncThunk("getCategorFilterProductList",
     async (category) => {
-        const response = await axios.get(`http://localhost:3000/products`);
+        const response = await axios.get(API_URL);
         const categoryList = response.data.filter((product) =>
             product.category === category
         )
         return categoryList;
     })
+
+export let getProductDetails = createAsyncThunk(
+    "getProductDetails",
+    async (productID) => {
+        const response = await axios.get(`${API_URL}/${productID}`)
+        return response.data;
+    }
+)
 
 const initialState = {
     productList: [],
@@ -40,7 +55,9 @@ const initialState = {
     flashList: [],
     bestSellingList: [],
     categoryProducts: [],
-    categoryStatus: null
+    categoryStatus: null,
+    productDetail: null,
+    productDetailStatus: null
 }
 export const productSlice = createSlice({
     name: "product",
@@ -52,7 +69,11 @@ export const productSlice = createSlice({
             state.categoryList = []; // Kategori listesini sıfırla
             state.popularList = []; // Popüler listeyi sıfırla
             state.bestSellingList = [];
-            state.flashList = []
+            state.flashList = [];
+            state.categoryProducts = [];
+            state.categoryStatus = null;
+            state.productDetail = null;
+            state.productDetailStatus = null;
         },
         getCategoryList: (state) => {
             if (state.productStatus === 'success') {
@@ -116,11 +137,21 @@ export const productSlice = createSlice({
                 state.categoryProducts = action.payload;
                 state.categoryStatus = "success"
             }))
-            .addCase(getCategorFilterProductList.pending, ((state, action) => {
+            .addCase(getCategorFilterProductList.pending, ((state) => {
                 state.categoryStatus = "loading"
             }))
-            .addCase(getCategorFilterProductList.rejected, ((state, action) => {
+            .addCase(getCategorFilterProductList.rejected, ((state) => {
                 state.categoryStatus = "error";
+            }))
+            .addCase(getProductDetails.fulfilled, ((state, action) => {
+                state.productDetailStatus = "success";
+                state.productDetail = action.payload;
+            }))
+            .addCase(getProductDetails.pending, ((state) => {
+                state.productDetailStatus = "loading";
+            }))
+            .addCase(getProductDetails.rejected, ((state) => {
+                state.productDetailStatus = "error";
             }))
     }
 })
