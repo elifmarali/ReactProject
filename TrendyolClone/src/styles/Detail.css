@@ -1,28 +1,196 @@
+.detailContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    font-family: monospace;
+
+}
+
 .detail {
     display: flex;
+    gap: 4px;
+    justify-content: space-evenly;
 }
 
 .detailImage {
     width: 400px;
     height: 600px;
+    border-radius: 6px;
 }
 
-.favorite:hover .productFavoriteIcon {
+.productInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 40%;
+}
+
+.infoTop {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 16px;
+}
+
+.categoryInfo {
+    display: flex;
+    width: auto;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.color {
+    width: 50px;
+    height: 50px;
+    border: 0.1px solid lightgray;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #f1f1f1eb;
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.sizesContainer,
+.colorsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sizeContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.size {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 32px;
+    border: 0.3px solid lightgray;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.oneSize {
+    width: 120px;
+    height: 40px;
+}
+
+.price {
+    font-size: 20px;
+    border: 1px solid #f27b1f;
+    border-radius: 6px;
+    padding: 10px;
     color: #f27b1f;
+    width: 40%;
+    font-weight: 600;
 }
 
-.favorite:hover.favoriteOn:hover .productFavoriteIcon {
+.line {
+    height: 1px;
+    color: lightgray;
+}
+
+
+
+.infoBottom {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.basketAddButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background-color: #f27b1f;
     color: #fff;
+    border: none;
+    padding: 15px 5px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
-.favoriteOn:hover.productFavoriteIcon {
+.basketAddButton:hover {
+    background-color: #b84f0a;
+}
+
+.detailFavorite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid lightgray;
+    cursor: pointer;
+}
+
+.favoriteIconDetail {
+    width: 30px;
+    height: 30px;
+
+}
+
+.detailFavorite:hover .favoriteIconDetail {
+    color: #f27b1f;
+    transition: 300ms all;
+}
+
+.detailFavorite:hover {
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.detailFavoriteCliked {
+    background-color: #f27b1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    cursor: pointer;
+}
+
+.favoriteiIconDetailClicked {
     color: #fff;
+    width: 30px;
+    height: 30px;
 }
 
-.favoriteOn.favorite {
-    background: #f27b1f;
+.detailCoupon {
+    width: 180px;
+    height: 40px;
+    background-color: #fff0f5;
+    color: #000;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 4px;
 }
 
-.favoriteOn.productFavoriteIcon {
-    color: #fff;
+.detailCouponIcon {
+    width: 20px;
+    height: 20px;
 }

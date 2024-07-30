@@ -8,6 +8,8 @@ import { useDispatch, useSelector } from "react-redux";
 import "../styles/Detail.css";
 import { AiOutlineHeart } from "react-icons/ai";
 import { BsBox } from "react-icons/bs";
+import { CiHeart } from "react-icons/ci";
+import { RiCoupon3Line } from "react-icons/ri";
 
 function Detail() {
   let element;
@@ -16,6 +18,8 @@ function Detail() {
   const { productDetail, productDetailStatus } = useSelector(
     (store) => store.product
   );
+
+  console.log(productDetail);
   const [cargo, setCargo] = useState(false);
   const [discount, setDiscount] = useState(false);
   const [heart, setHeart] = useState(false);
@@ -45,7 +49,7 @@ function Detail() {
   };
 
   return (
-    <>
+    <div className="detailContainer">
       <div>{element}</div>
       <div className="detail">
         <div>
@@ -58,14 +62,6 @@ function Detail() {
                 </div>
               </div>
             )}
-            <div
-              className={`favorite ${heart ? "favoriteOn" : ""}`}
-              onClick={handleClickFavorite}
-            >
-              <AiOutlineHeart
-                className={`productFavoriteIcon ${heart ? "favoriteOn" : ""}`}
-              />
-            </div>
           </div>
           <img
             src={productDetail?.imageUrl}
@@ -73,9 +69,69 @@ function Detail() {
             className="detailImage"
           />
         </div>
-        <div></div>
+        <div className="productInfo">
+          <div className="infoTop">
+            <div className="name">
+              <div className="categoryInfo">{productDetail?.category}</div>
+              {productDetail?.name}
+            </div>
+            <div className="name">{productDetail?.description}</div>
+            <div className="price">{productDetail?.price} TL</div>
+            <span className="line" />
+          </div>
+          {productDetail?.sizes && (
+            <div className="sizesContainer">
+              <div className="name">Beden:</div>
+              {productDetail?.sizes.includes("One Size") ? (
+                <button className="oneSize size">Tek Ebat</button>
+              ) : (
+                <div className="sizeContainer">
+                  {productDetail?.sizes.map((size) => {
+                    return (
+                      <button key={size} className="size">
+                        {size}
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+          )}
+          {productDetail?.color && (
+            <div className="colorsContainer">
+              <div className="name">Renk:</div>
+              <div
+                className="color"
+                style={{ backgroundColor: productDetail?.color.toLowerCase() }}
+              >
+                {productDetail.color}
+              </div>
+            </div>
+          )}
+          {discount && (
+            <div className="detailCoupon">
+              <RiCoupon3Line fill="#ff4a88" className="detailCouponIcon" />
+              20 Tl Kupon Fırsatı
+            </div>
+          )}
+          <div className="infoBottom">
+            <button className="basketAddButton">Sepete Ekle</button>
+
+            <button
+              className={heart ? "detailFavoriteCliked" : "detailFavorite"}
+              onClick={() => handleClickFavorite(productDetail?.id)}
+            >
+              <CiHeart
+                className={
+                  heart ? "favoriteiIconDetailClicked" : "favoriteIconDetail"
+                }
+              />
+            </button>
+          </div>
+        </div>
       </div>
-    </>
+      <div className="detailDesc"></div>
+    </div>
   );
 }
 

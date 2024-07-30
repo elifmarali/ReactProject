@@ -2,7 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     basket: [],
-    quantity: 0
+    quantity: 0,
+    total: 0
 }
 export const basketSlice = createSlice({
     name: 'basket',

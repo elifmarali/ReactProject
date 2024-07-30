@@ -4,7 +4,7 @@
       "id": 24,
       "name": "Cozy Knit Sweater",
       "category": "Kadın",
-      "color": "Gray",
+      "color": "Pink",
       "productName": "Sweater",
       "imageUrl": "https://dfcdn.defacto.com.tr/upload/bol-paca-kombini133920231139.jpg",
       "price": 139.99,
@@ -91,7 +91,7 @@
         2,
         4
       ],
-      "favorite": false
+      "favorite": true
     },
     {
       "id": 28,
@@ -425,7 +425,7 @@
         2,
         4
       ],
-      "favorite": false
+      "favorite": true
     },
     {
       "id": 65,
@@ -807,7 +807,7 @@
       "coupons": [
         2
       ],
-      "favorite": false
+      "favorite": true
     },
     {
       "id": 95,
@@ -926,7 +926,7 @@
       "coupons": [
         2
       ],
-      "favorite": false
+      "favorite": true
     },
     {
       "id": 100,
@@ -944,7 +944,7 @@
         "En Çok Eklenenler"
       ],
       "coupons": [],
-      "favorite": false
+      "favorite": true
     },
     {
       "id": 101,
@@ -984,7 +984,7 @@
       "coupons": [
         4
       ],
-      "favorite": false
+      "favorite": true
     },
     {
       "id": 103,
@@ -1022,7 +1022,7 @@
         "En Çok Öne Çıkanlar"
       ],
       "coupons": [],
-      "favorite": false
+      "favorite": true
     },
     {
       "id": 105,
@@ -1083,7 +1083,7 @@
       "coupons": [
         4
       ],
-      "favorite": false
+      "favorite": true
     }
   ],
   "coupons": [
