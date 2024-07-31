@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import {
   favoriteClick,
   getProductDetails,
 } from "../redux/Product/productSlice";
 import { useDispatch, useSelector } from "react-redux";
 import "../styles/Detail.css";
-import { AiOutlineHeart } from "react-icons/ai";
 import { BsBox } from "react-icons/bs";
 import { CiHeart } from "react-icons/ci";
 import { RiCoupon3Line } from "react-icons/ri";
+import CustomPopup from "./CustomPopup"; // CustomPopup bileşenini import et
+import { basketAddProduct } from "../redux/Basket/basketSlice";
 
 function Detail() {
   let element;
@@ -18,11 +19,18 @@ function Detail() {
   const { productDetail, productDetailStatus } = useSelector(
     (store) => store.product
   );
-
-  console.log(productDetail);
+  const [selectedColor, setSelectedColor] = useState(null);
+  const [selectedSize, setSelectedSize] = useState(null);
   const [cargo, setCargo] = useState(false);
   const [discount, setDiscount] = useState(false);
   const [heart, setHeart] = useState(false);
+  const location = useLocation();
+  const [popupText, setPopupText] = useState(null);
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+  useEffect(() => {
+    setSelectedSize(null);
+  }, [location]);
 
   useEffect(() => {
     if (id) {
@@ -48,9 +56,52 @@ function Detail() {
     setHeart(!heart);
   };
 
+  const handleClickSize = (size) => {
+    if (selectedSize === null) {
+      setSelectedSize(size);
+    } else if (selectedSize === size) {
+      setSelectedSize(null);
+    } else {
+      setSelectedSize(size);
+    }
+  };
+
+  const handleClickColor = (color) => {
+    if (selectedColor === null) {
+      setSelectedColor(color);
+    } else if (selectedColor === color) {
+      setSelectedColor(null);
+    } else {
+      setSelectedColor(color);
+    }
+  };
+
+  const handleAddToBasket = (e) => {
+    if (selectedSize === null && selectedColor === null) {
+      setPopupText("Beden ve Renk Seçimi Yapınız!");
+    } else if (selectedSize === null) {
+      setPopupText("Beden Seçimi Yapınız!");
+    } else if (selectedColor === null) {
+      setPopupText("Renk Seçimi Yapınız!");
+    } else {
+      setPopupText(null);
+      dispatch(
+        basketAddProduct({
+          name: productDetail.name,
+          id: productDetail.id,
+          quantity: 1,
+          size: selectedSize,
+          color: selectedColor,
+        })
+      );
+    }
+    setIsPopupVisible(true);
+  };
+
   return (
     <div className="detailContainer">
       <div>{element}</div>
+
       <div className="detail">
         <div>
           <div className="productTop">
@@ -83,12 +134,29 @@ function Detail() {
             <div className="sizesContainer">
               <div className="name">Beden:</div>
               {productDetail?.sizes.includes("One Size") ? (
-                <button className="oneSize size">Tek Ebat</button>
+                <button
+                  className={`oneSize size ${
+                    selectedSize === "One Size" && "selectedSize"
+                  }`}
+                  onClick={() => {
+                    handleClickSize("One Size");
+                  }}
+                >
+                  Tek Ebat
+                </button>
               ) : (
                 <div className="sizeContainer">
                   {productDetail?.sizes.map((size) => {
                     return (
-                      <button key={size} className="size">
+                      <button
+                        key={size}
+                        className={`size ${
+                          selectedSize === size && "selectedSize"
+                        }`}
+                        onClick={() => {
+                          handleClickSize(size);
+                        }}
+                      >
                         {size}
                       </button>
                     );
@@ -101,8 +169,11 @@ function Detail() {
             <div className="colorsContainer">
               <div className="name">Renk:</div>
               <div
-                className="color"
+                className={`color ${
+                  selectedColor === productDetail?.color && "selectedColor"
+                }`}
                 style={{ backgroundColor: productDetail?.color.toLowerCase() }}
+                onClick={() => handleClickColor(productDetail?.color)}
               >
                 {productDetail.color}
               </div>
@@ -111,11 +182,23 @@ function Detail() {
           {discount && (
             <div className="detailCoupon">
               <RiCoupon3Line fill="#ff4a88" className="detailCouponIcon" />
-              20 Tl Kupon Fırsatı
+              20 TL Kupon Fırsatı
             </div>
           )}
+
           <div className="infoBottom">
-            <button className="basketAddButton">Sepete Ekle</button>
+            {isPopupVisible && popupText && (
+              <CustomPopup
+                message={popupText}
+                onClose={() => setIsPopupVisible(false)}
+              />
+            )}
+            <button
+              className="basketAddButton"
+              onClick={(e) => handleAddToBasket(e)}
+            >
+              Sepete Ekle
+            </button>
 
             <button
               className={heart ? "detailFavoriteCliked" : "detailFavorite"}

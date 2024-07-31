@@ -14,7 +14,6 @@ export let favoriteClick = createAsyncThunk("favoriteClick",
     async (id, { getState, dispatch }) => {
         dispatch(getProductList())
         const state = getState();
-        console.log(state);
         let currentProduct = state.product.productList.find(product => product.id === id);
         if (currentProduct === undefined) {
             currentProduct = state.product.productDetail;
@@ -133,7 +132,6 @@ export const productSlice = createSlice({
                 state.productStatus = "error";
             }))
             .addCase(getCategorFilterProductList.fulfilled, ((state, action) => {
-                console.log(action.payload);
                 state.categoryProducts = action.payload;
                 state.categoryStatus = "success"
             }))
