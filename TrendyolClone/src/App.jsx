@@ -1,4 +1,4 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -7,6 +7,9 @@ import ProductList from "./components/ProductList";
 import SearchBar from "./components/SearchBar";
 import NotFoundPage from "./page/NotFoundPage";
 import ProductDetails from "./page/ProductDetails";
+import { useEffect } from "react";
+import { getProductList } from "./redux/Product/productSlice";
+import Basket from "./page/Basket";
 
 const router = createBrowserRouter([
   {
@@ -26,12 +29,20 @@ const router = createBrowserRouter([
     element: <ProductDetails />,
   },
   {
+    path: "/basket",
+    element: <Basket />,
+  },
+  {
     path: "*",
     element: <NotFoundPage />,
   },
 ]);
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getProductList());
+  }, []);
   return <RouterProvider router={router}></RouterProvider>;
 }
 

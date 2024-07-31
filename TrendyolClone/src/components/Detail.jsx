@@ -89,11 +89,14 @@ function Detail() {
         basketAddProduct({
           name: productDetail.name,
           id: productDetail.id,
-          quantity: 1,
           size: selectedSize,
           color: selectedColor,
+          price: productDetail?.price,
+          coupons: productDetail?.coupons,
         })
       );
+      setSelectedSize(null);
+      setSelectedColor(null);
     }
     setIsPopupVisible(true);
   };

@@ -6,7 +6,7 @@ import {
   getProductList,
   resetProductList,
 } from "../redux/Product/productSlice";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import ColorfulBar from "../components/ColorfulBar";
 import PopularProduct from "../components/PopularProducts";
 import FlashProducts from "../components/FlashProducts";
@@ -17,6 +17,10 @@ import { useLocation } from "react-router-dom";
 function Home() {
   const location = useLocation();
   const dispatch = useDispatch();
+  const { total } = useSelector((store) => store.basket);
+  useEffect(() => {
+    console.log(total);
+  }, [total]);
 
   useEffect(() => {
     dispatch(getProductList());
