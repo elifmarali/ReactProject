@@ -1,4 +1,4 @@
-# ReactProjects
+# React Projects
 ## Trendyol Clone
 #### Home page
 <img width="1440" alt="Ekran Resmi 2024-08-05 02 09 53" src="https://github.com/user-attachments/assets/a5b1e8fc-cd92-48e3-b416-c8a08fca11ae"><img width="1440" alt="Ekran Resmi 2024-08-05 02 10 02" src="https://github.com/user-attachments/assets/6255de52-6e35-41e0-a06e-9a6e280a0724">
