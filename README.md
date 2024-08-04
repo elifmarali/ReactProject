@@ -1,4 +1,25 @@
 # ReactProjects
+## Trendyol Clone
+#### Home page
+<img width="1440" alt="Ekran Resmi 2024-08-05 02 09 53" src="https://github.com/user-attachments/assets/a5b1e8fc-cd92-48e3-b416-c8a08fca11ae"><img width="1440" alt="Ekran Resmi 2024-08-05 02 10 02" src="https://github.com/user-attachments/assets/6255de52-6e35-41e0-a06e-9a6e280a0724">
+<img width="1440" alt="Ekran Resmi 2024-08-05 02 10 09" src="https://github.com/user-attachments/assets/14972a9f-07e0-429e-97a0-e130d8d73b3a">
+
+#### Product Detail Page
+<img width="1440" alt="Ekran Resmi 2024-08-05 02 11 28" src="https://github.com/user-attachments/assets/4ee5ab25-8fbf-4f7f-bfc6-828497b8c2fe">
+
+#### Category Page
+<img width="1440" alt="Ekran Resmi 2024-08-05 02 10 21" src="https://github.com/user-attachments/assets/881e8759-4ce3-4ea7-a5c8-5f718bf17fa9"><img width="1440" alt="Ekran Resmi 2024-08-05 02 10 26" src="https://github.com/user-attachments/assets/f0dab36d-ff18-432e-9cc5-b3be712d98f1">
+
+#### Basket Page
+<img width="1440" alt="Ekran Resmi 2024-08-05 02 10 42" src="https://github.com/user-attachments/assets/fba5e53f-d540-49e9-a213-9d3432b80028">
+<img width="1440" alt="Ekran Resmi 2024-08-05 02 10 51" src="https://github.com/user-attachments/assets/53ba461a-4c4c-4c91-b157-a6373f056fbe">
+
+#### Favorite Products Page
+<img width="1440" alt="Ekran Resmi 2024-08-05 02 11 05" src="https://github.com/user-attachments/assets/169022c2-7093-4f61-95fc-5f1087ce1210">
+
+
+#### Search Screen
+<img width="1440" alt="Ekran Resmi 2024-08-05 02 11 18" src="https://github.com/user-attachments/assets/6f9ebc9b-321c-4132-8f92-1f8a7ceacf7f">
 
 ## Brand Colors
 <img width="1440" alt="Ekran Resmi 2024-04-27 15 07 30" src="https://github.com/elifmarali/ReactProject/assets/71133148/f5e7e0a9-1166-42e5-be13-4a3ab5b60243">
