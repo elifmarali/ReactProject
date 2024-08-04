@@ -13,30 +13,42 @@ import FlashProducts from "../components/FlashProducts";
 import BestSellingProducts from "../components/BestSellingProducts";
 import Footer from "../components/Footer";
 import { useLocation } from "react-router-dom";
+import Product from "../components/Product";
 
 function Home() {
   const location = useLocation();
   const dispatch = useDispatch();
-  const { total } = useSelector((store) => store.basket);
-  useEffect(() => {
-    console.log(total);
-  }, [total]);
-
+  const { search, searchList } = useSelector((store) => store.product);
   useEffect(() => {
     dispatch(getProductList());
   }, [location]);
   useEffect(() => {
     dispatch(resetProductList());
   }, [location]);
+
   return (
     <>
       <div className="home">
         <SearchBar />
         <Navbar />
-        <ColorfulBar />
-        <PopularProduct />
-        <FlashProducts />
-        <BestSellingProducts />
+        {search === true ? (
+          <div className="productList">
+            {searchList.map((product, index) => (
+              <Product
+                product={product}
+                key={`product-${product.id}-${index}`}
+                className="popularItem"
+              />
+            ))}
+          </div>
+        ) : (
+          <>
+            <ColorfulBar />
+            <PopularProduct />
+            <FlashProducts />
+            <BestSellingProducts />
+          </>
+        )}
       </div>
       <Footer />
     </>

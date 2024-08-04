@@ -93,6 +93,7 @@ function Detail() {
           color: selectedColor,
           price: productDetail?.price,
           coupons: productDetail?.coupons,
+          imageUrl: productDetail?.imageUrl,
         })
       );
       setSelectedSize(null);

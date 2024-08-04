@@ -20,6 +20,8 @@ function ProductList() {
     bestSellingList,
     categoryStatus,
     categoryProducts,
+    searchList,
+    search,
   } = useSelector((store) => store.product);
   const dispatch = useDispatch();
   const { category } = useParams();
@@ -39,6 +41,10 @@ function ProductList() {
       setProducts(flashList);
     } else if (categoryStatus === "success") {
       setProducts(categoryProducts);
+    } else if (search && searchList.length > 0) {
+      setProducts(searchList);
+    } else if (search && searchList.length === 0) {
+      setProducts([]); // Ensure to set products to empty array
     } else {
       setProducts([]);
     }
@@ -49,23 +55,40 @@ function ProductList() {
     categoryProducts,
     categoryStatus,
     paramFormat,
+    search,
+    searchList,
   ]);
 
   return (
     <div className="productListContainer">
       <SearchBar />
       <Navbar />
-      <div className="productList">
-        {products?.map((product, index) => (
-          <Product
-            product={product}
-            key={`product-${paramFormat}-${product.id}-${index}`}
-            className="popularItem"
-          />
-        ))}
-      </div>
+      {search ? (
+        <div className="productList">
+          {searchList.map((product, index) => (
+            <Product
+              product={product}
+              key={`product-${product.id}-${index}`}
+              className="popularItem"
+            />
+          ))}
+        </div>
+      ) : (
+        <div className="productList">
+          {products.length === 0 && search === true ? (
+            <div>Aradığınız isimde bir ürün bulunamadı...</div>
+          ) : (
+            products.map((product, index) => (
+              <Product
+                product={product}
+                key={`product-${paramFormat}-${product.id}-${index}`}
+                className="popularItem"
+              />
+            ))
+          )}
+        </div>
+      )}
     </div>
   );
 }
-
 export default ProductList;

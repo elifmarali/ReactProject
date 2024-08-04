@@ -56,7 +56,10 @@ const initialState = {
     categoryProducts: [],
     categoryStatus: null,
     productDetail: null,
-    productDetailStatus: null
+    productDetailStatus: null,
+    favoriteList: [],
+    searchList: [],
+    search: false
 }
 export const productSlice = createSlice({
     name: "product",
@@ -73,6 +76,8 @@ export const productSlice = createSlice({
             state.categoryStatus = null;
             state.productDetail = null;
             state.productDetailStatus = null;
+            state.searchList = [];
+            state.search = false;
         },
         getCategoryList: (state) => {
             if (state.productStatus === 'success') {
@@ -116,6 +121,24 @@ export const productSlice = createSlice({
                     })
                 })
             }
+        },
+        getFavoriteList: (state) => {
+            if (state.productStatus === 'success') {
+                state.favoriteList = state.productList.filter((product) => product.favorite === true)
+            }
+        },
+        searchProduct: (state, action) => {
+            console.log("calisti");
+            let searchTerm = action.payload?.trim() || "";
+            if (searchTerm) {
+                state.search = true;
+                state.searchList = state.productList.filter((product) =>
+                    product.name.toLowerCase().includes(searchTerm.toLowerCase())
+                );
+            } else {
+                state.search = false;
+                state.searchList = [];
+            }
         }
 
     },
@@ -155,4 +178,4 @@ export const productSlice = createSlice({
 })
 
 export default productSlice.reducer;
-export const { getCategoryList, getEnCokEklenenlerList, resetProductList, getFlashList, getBestSellingList } = productSlice.actions;
+export const { getCategoryList, getEnCokEklenenlerList, resetProductList, getFlashList, getBestSellingList, getFavoriteList, searchProduct } = productSlice.actions;

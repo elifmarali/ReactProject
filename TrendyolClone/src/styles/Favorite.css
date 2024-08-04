@@ -1,0 +1,44 @@
+.favoriteContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 80px;
+    gap: 20px;
+}
+
+.favoriteList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.favoriteItem {
+    display: flex;
+    border: 1px solid lightgray;
+    width: 20vw;
+    padding: 10px;
+    gap: 20px;
+    border-radius: 6px;
+}
+
+.favoriteImage {
+    width: 90px;
+    height: 150px;
+    border-radius: 6px;
+}
+
+.favoriteRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.favoriteDesc {
+    font-size: 12px;
+    font-weight: 100;
+    color: rgb(86, 86, 86)
+}
+
+.favoritePrice {
+    color: #f27b1f;
+}
